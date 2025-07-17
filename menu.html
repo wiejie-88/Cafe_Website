@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Heart & Hearth </title>
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Header Section -->
+
+        <header tabindex="0">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./res/img/cafe.png" alt="Cafe Logo">
+                </div>
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="cafe.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="menu.html" class="active">Menu</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="login-signup">
+                <a href="loyalty.html" class="login-signup-button">Login / Sign Up</a>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Discover Our New Arrivals, Holiday Special.</h1>
+                <span class="price">$20.00</span>
+                <div class="special-product-description">
+                    <p>Enjoy the perfect balance of coffee and chocolate bliss in every frosty sip -<br><span>Frosted Mocha Delight</span>.<br>Available now in <span>Heart & Hearth</span>!</p>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="circle">
+                    <img src="./res/img/special.png" alt="Frosted Mocha Delight">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Menu section -->
+        
+        <section class="menu">
+            <div class="title">
+                <h1>MENU</h1>
+            </div>
+            
+            <div class="menu-container">
+                
+                <!-- Menu nav -->
+                
+                <div class="menu-nav">
+                    <form class="search-bar">
+                        <input type="text" placeholder="Search" id="search-bar">
+                    </form>
+                    <div class="menu-nav-buttons">
+                        <button class="btn-category active" id="coffee">Coffee</button>
+                        <button class="btn-category" id="tea">Tea</button>
+                        <button class="btn-category" id="pastries">Pastries</button>
+                        <button class="btn-category" id="light-meals">Light Meals</button>
+                    </div>
+                </div>
+
+                <!-- Menu Items -->
+            
+                <div class="card-container">
+
+                    <div class="card coffee show" id="espresso">
+                        <div class="card-image">
+                            <img src="./res/img/espresso.jpg" alt="Espresso">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="product-name">Espresso</h3>
+                            <span class="price">RM 8.99</span>
+                        </div>
+                    </div>
+
+                    <div class="card coffee show" id="americano">
+                        <div class="card-image">
+                            <img src="./res/img/americano.jpg" alt="Americano">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="product-name">Americano</h3>
+                            <span class="price">RM 8.99</span>
+                        </div>
+                    </div>
+
+                    <div class="card coffee show" id="latte">
+                        <div class="card-image">
+                            <img src="./res/img/latte.jpg" alt="Latte">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="product-name">Latte</h3>
+                            <span class="price">RM 12.99</span>
+                        </div>
+                    </div>
+
+                    <div class="card coffee show" id="cappuccino">
+                        <div class="card-image">
+                            <img src="./res/img/cappuccino.jpg" alt="Cappuccino">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="product-name">Cappuccino</h3>
+                            <span class="price">RM 12.99</span>
+                        </div>
+                    </div>
+
+                    <div class="card coffee show" id="mocha">
+                        <div class="card-image">
+                            <img src="./res/img/mocha.jpg" alt="Mocha">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="product-name">Mocha</h3>
+                            <span class="price">RM 14.99</span>
+                        </div>
+                    </div>
+
+                    <div class="card coffee show" id="hot-chocolate">
+                        <div class="card-image">
+                            <img src="./res/img/hot-chocolate.jpg" alt="Hot Chocolate">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="product-name">Hot Chocolate</h3>
+                            <span class="price">RM 14.99</span>
+                        </div>
+                    </div>
+
+                    <div class="card coffee show" id="caramel-frappuccino">
+                        <div class="card-image">
+                            <img src="./res/img/caramel-frappuccino.jpg" alt="Caramel Frappuccino">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="product-name">Caramel Frappuccino</h3>
+                            <span class="price">RM 16.99</span>
+                        </div>
+                    </div>
+
+                    <div class="card tea" id="green-tea-latte">
+                        <div class="card-image">
+                            <img src="./res/img/green-tea-latte.jpg" alt="Green Tea Latte">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="product-name">Green Tea Latte</h3>
+                            <span class="price">RM 13.99</span>
+                        </div>
+                    </div>
+
+                    <div class="card tea" id="macha-latte">
+                        <div class="card-image">
+                            <img src="./res/img/matcha-latte.png" alt="Macha Latte">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="product-name">Macha Latte</h3>
+                            <span class="price">RM 13.99</span>
+                        </div>
+                    </div>
+
+                    <div class="card tea" id="black-tea">
+                        <div class="card-image">
+                            <img src="./res/img/black-tea.jpg" alt="Black Tea">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="product-name">Black Tea</h3>
+                            <span class="price">RM 8.99</span>
+                        </div>
+                    </div>
+
+                    <div class="card pastries" id="chocolate-cake">
+                        <div class="card-image">
+                            <img src="./res/img/chocolate-cake.png" alt="Chocolate Cake">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="product-name">Chocolate Cake</h3>
+                            <span class="price">RM 17.99</span>
+                        </div>
+                    </div>
+
+                    <div class="card pastries" id="cheese-cake">
+                        <div class="card-image">
+                            <img src="./res/img/cheese-cake.png" alt="Cheese Cake">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="product-name">Cheese Cake</h3>
+                            <span class="price">RM 17.99</span>
+                        </div>
+                    </div>
+
+                    <div class="card pastries" id="croissant">
+                        <div class="card-image">
+                            <img src="./res/img/croissant.png" alt="Croissant">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="product-name">Croissant</h3>
+                            <span class="price">RM 10.99</span>
+                        </div>
+                    </div>
+
+                    <div class="card pastries" id="cookie">
+                        <div class="card-image">
+                            <img src="./res/img/cookie.png" alt="Cookie">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="product-name">Cookie</h3>
+                            <span class="price">RM 5.99</span>
+                        </div>
+                    </div>
+
+                    <div class="card pastries" id="donut">
+                        <div class="card-image">
+                            <img src="./res/img/donut.png" alt="Donut">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="product-name">Donut</h3>
+                            <span class="price">RM 5.99</span>
+                        </div>
+                    </div>
+
+                    <div class="card pastries" id="muffin">
+                        <div class="card-image">
+                            <img src="./res/img/muffin.png" alt="Muffin">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="product-name">Muffin</h3>
+                            <span class="price">RM 4.99</span>
+                        </div>
+                    </div>
+
+                    <div class="card light-meals" id="mushroom-soup">
+                        <div class="card-image">
+                            <img src="./res/img/mushroom-soup.png" alt="Mushroom Soup">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="product-name">Mushroom Soup</h3>
+                            <span class="price">RM 7.99</span>
+                        </div>
+                    </div>
+
+                    <div class="card light-meals" id="fusili-bolognese">
+                        <div class="card-image">
+                            <img src="./res/img/fusili-bolognese.png" alt="Fusili Bolognese">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="product-name">Fusili Bolognese</h3>
+                            <span class="price">RM 21.99</span>
+                        </div>
+                    </div>
+
+                    <!-- Popout Modals -->
+
+                    <div class="modal espresso">
+                        <div class="modal-image">
+                            <img src="./res/img/espresso.jpg" alt="Espresso">
+                        </div>
+                        <div class="modal-info">
+                            <h3 class="product-name">Espresso</h3>
+                            <span class="price">RM 8.99</span>
+                            <p class="product-description">A bold, concentrated shot of coffee made by forcing hot water through finely ground coffee beans. With its rich, intense flavor and smooth, velvety texture, Espresso is the perfect choice for coffee lovers who crave a powerful, straightforward coffee experience.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="modal americano">
+                        <div class="modal-image">
+                            <img src="./res/img/americano.jpg" alt="Americano">
+                        </div>
+                        <div class="modal-info">
+                            <h3 class="product-name">Americano</h3>
+                            <span class="price">RM 8.99</span>
+                            <p class="product-description">A bold and rich coffee made by diluting espresso with hot water. The Americano delivers a smooth, full-bodied flavor with a perfect balance of strength and subtlety, making it an ideal choice for those who enjoy a classic, straightforward cup of coffee.</p>
+                        </div>
+                    </div>
+
+                    <div class="modal latte">
+                        <div class="modal-image">
+                            <img src="./res/img/latte.jpg" alt="Latte">
+                        </div>
+                        <div class="modal-info">
+                            <h3 class="product-name">Latte</h3>
+                            <span class="price">RM 12.99</span>
+                            <p class="product-description">A creamy, smooth blend of espresso and steamed milk, topped with a light foam. The Latte offers a milder coffee experience with a velvety texture, making it perfect for those who prefer a less intense coffee flavor with a touch of sweetness.</p>
+                        </div>
+                    </div>
+
+                    <div class="modal cappuccino">
+                        <div class="modal-image">
+                            <img src="./res/img/cappuccino.jpg" alt="Cappuccino">
+                        </div>
+                        <div class="modal-info">
+                            <h3 class="product-name">Cappuccino</h3>
+                            <span class="price">RM 12.99</span>
+                            <p class="product-description">A rich and frothy espresso drink made with equal parts of espresso, steamed milk, and foam. The Cappuccino combines bold coffee flavor with a smooth, creamy texture, topped with a velvety layer of foam for a satisfying and balanced experience.</p>
+                        </div>
+                    </div>
+
+                    <div class="modal mocha">
+                        <div class="modal-image">
+                            <img src="./res/img/mocha.jpg" alt="Mocha">
+                        </div>
+                        <div class="modal-info">
+                            <h3 class="product-name">Mocha</h3>
+                            <span class="price">RM 14.99</span>
+                            <p class="product-description">A delicious fusion of rich espresso, velvety steamed milk, and decadent chocolate syrup, topped with a light layer of whipped cream. The Mocha is the perfect treat for chocolate and coffee lovers alike, offering a sweet, creamy, and indulgent drink with a bold coffee kick.</p>
+                        </div>
+                    </div>
+
+                    <div class="modal hot-chocolate">
+                        <div class="modal-image">
+                            <img src="./res/img/hot-chocolate.jpg" alt="Hot Chocolate">
+                        </div>
+                        <div class="modal-info">
+                            <h3 class="product-name">Hot Chocolate</h3>
+                            <span class="price">RM 14.99</span>
+                            <p class="product-description">A cozy, indulgent treat made with rich, melted chocolate and steamed milk, creating a velvety, smooth drink. Topped with whipped cream or marshmallows, this classic beverage is the perfect comfort on a chilly day, offering a warm, sweet escape with every sip.</p>
+                        </div>
+                    </div>
+
+                    <div class="modal caramel-frappuccino">
+                        <div class="modal-image">
+                            <img src="./res/img/caramel-frappuccino.jpg" alt="Caramel Frappuccino">
+                        </div>
+                        <div class="modal-info">
+                            <h3 class="product-name">Caramel Frappuccino</h3>
+                            <span class="price">RM 16.99</span>
+                            <p class="product-description">A refreshing, ice-cold blend of coffee, milk, and rich caramel syrup, topped with a swirl of whipped cream and a drizzle of caramel sauce. The Caramel Frappuccino is the perfect combination of sweet, creamy, and coffee flavors, making it a deliciously indulgent treat on a warm day.</p>
+                        </div>
+                    </div>
+
+                    <div class="modal green-tea-latte">
+                        <div class="modal-image">
+                            <img src="./res/img/green-tea-latte.jpg" alt="Green Tea Latte">
+                        </div>
+                        <div class="modal-info">
+                            <h3 class="product-name">Green Tea Latte</h3>
+                            <span class="price">RM 13.99</span>
+                            <p class="product-description">A soothing blend of creamy steamed milk and premium matcha green tea, offering a delicate balance of earthy flavors with a touch of sweetness. The Green Tea Latte is a refreshing, antioxidant-rich treat perfect for those seeking a calming, yet energizing drink.</p>
+                        </div>
+                    </div>
+
+                    <div class="modal macha-latte">
+                        <div class="modal-image">
+                            <img src="./res/img/matcha-latte.png" alt="Macha Latte">
+                        </div>
+                        <div class="modal-info">
+                            <h3 class="product-name">Macha Latte</h3>
+                            <span class="price">RM 13.99</span>
+                            <p class="product-description">A luscious fusion of premium matcha and creamy milk. This invigorating drink is loaded with antioxidants and offers a smooth, satisfying taste that energizes your day. Enjoy it hot or iced for a refreshing boost anytime!</p>
+                        </div>
+                    </div>
+
+                    <div class="modal black-tea">
+                        <div class="modal-image">
+                            <img src="./res/img/black-tea.jpg" alt="Black Tea">
+                        </div>
+                        <div class="modal-info">
+                            <h3 class="product-name">Black Tea</h3>
+                            <span class="price">RM 8.99</span>
+                            <p class="product-description">Our premium Black Tea, sourced from the finest estates, delivers a bold aroma and rich flavor. Perfect for any time of day, it can be enjoyed straight or with milk and sweeteners for a delightful experience in every sip!</p>
+                        </div>
+                    </div>
+
+                    <div class="modal chocolate-cake">
+                        <div class="modal-image">
+                            <img src="./res/img/chocolate-cake.png" alt="Chocolate Cake">
+                        </div>
+                        <div class="modal-info">
+                            <h3 class="product-name">Chocolate Cake</h3>
+                            <span class="price">RM 17.99</span>
+                            <p class="product-description">Savor the rich decadence of our chocolate cake, featuring layers of moist chocolate sponge and creamy chocolate frosting. Every bite is a delightful indulgence, perfect for any occasion.</p>
+                        </div>
+                    </div>
+
+                    <div class="modal cheese-cake">
+                        <div class="modal-image">
+                            <img src="./res/img/cheese-cake.png" alt="Cheese Cake">
+                        </div>
+                        <div class="modal-info">
+                            <h3 class="product-name">Cheese Cake</h3>
+                            <span class="price">RM 17.99</span>
+                            <p class="product-description">Delight in our smooth and creamy cheesecake, set on a buttery graham cracker crust. Each bite is a perfect balance of sweetness and tanginess, making it a classic favorite for dessert lovers.</p>
+                        </div>
+                    </div>
+
+                    <div class="modal croissant">
+                        <div class="modal-image">
+                            <img src="./res/img/croissant.png" alt="Croissant">
+                        </div>
+                        <div class="modal-info">
+                            <h3 class="product-name">Croissant</h3>
+                            <span class="price">RM 10.99</span>
+                            <p class="product-description">Enjoy the buttery, flaky layers of our freshly baked croissant, golden brown and irresistibly tender. Perfect for breakfast or as a snack, it’s a delightful treat that pairs wonderfully with coffee or jam.</p>
+                        </div>
+                    </div>
+
+                    <div class="modal cookie">
+                        <div class="modal-image">
+                            <img src="./res/img/cookie.png" alt="Cookie">
+                        </div>
+                        <div class="modal-info">
+                            <h3 class="product-name">Cookie</h3>
+                            <span class="price">RM 5.99</span>
+                            <p class="product-description">Enjoy our freshly baked cookies, with a golden, crispy exterior and a soft, chewy center. Packed with rich chocolate chips or nuts, they offer a perfect balance of sweetness. Ideal for a snack or dessert, these cookies are a delightful treat with milk or coffee!</p>
+                        </div>
+                    </div>
+
+                    <div class="modal donut">
+                        <div class="modal-image">
+                            <img src="./res/img/donut.png" alt="Donut">
+                        </div>
+                        <div class="modal-info">
+                            <h3 class="product-name">Donut</h3>
+                            <span class="price">RM 5.99</span>
+                            <p class="product-description">Savor the decadent goodness of our chocolate donut, crafted with a soft, fluffy base and enveloped in a luscious chocolate glaze. Each bite offers a delightful combination of sweetness and richness, enhanced by colorful sprinkles that add a playful touch. Perfect for breakfast or as a midday indulgence.</p>
+                        </div>
+                    </div>
+
+                    <div class="modal muffin">
+                        <div class="modal-image">
+                            <img src="./res/img/muffin.png" alt="Muffin">
+                        </div>
+                        <div class="modal-info">
+                            <h3 class="product-name">Muffin</h3>
+                            <span class="price">RM 4.99</span>
+                            <p class="product-description">Indulge in our freshly baked muffins, bursting with flavor and moistness. Each muffin features a light and tender crumb, with options like blueberry, chocolate chip, or banana nut. Perfect for breakfast or a snack.</p>
+                        </div>
+                    </div>
+
+                    <div class="modal mushroom-soup">
+                        <div class="modal-image">
+                            <img src="./res/img/mushroom-soup.png" alt="Mushroom Soup">
+                        </div>
+                        <div class="modal-info">
+                            <h3 class="product-name">Mushroom Soup</h3>
+                            <span class="price">RM 7.99</span>
+                            <p class="product-description">Warm up with our creamy mushroom soup, a comforting blend of tender mushrooms and rich broth. Each spoonful is velvety and full of flavor, enhanced by herbs and a hint of garlic. Perfect as a starter or a cozy meal, this soup is a delightful way to enjoy the earthy goodness of mushrooms!</p>
+                        </div>
+                    </div>
+
+                    <div class="modal fusili-bolognese">
+                        <div class="modal-image">
+                            <img src="./res/img/fusili-bolognese.png" alt="Fusili Bolognese">
+                        </div>
+                        <div class="modal-info">
+                            <h3 class="product-name">Fusili Bolognese</h3>
+                            <span class="price">RM 21.99</span>
+                            <p class="product-description">A hearty and savory dish featuring fusili pasta topped with a rich Bolognese sauce. This comforting blend combines tender ground meat, aromatic vegetables, and a medley of herbs, simmered to perfection for a deep, flavorful experience.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <img src="./res/img/cafe.png" alt="Heart & Hearth" class="footer-logo">
+                    <p class="footer-tagline">Crafting moments of warmth and connection, one cup at a time.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="icon-map-pin"></i> 123 Hanway Extension, Milton Villa City, UK</li>
+                        <li><i class="icon-mail"></i> info@heartandhearth.com</li>
+                        <li><i class="icon-phone"></i> +44 (123) 456 7890</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Opening Hours</h3>
+                    <ul>
+                        <li><i class="icon-clock"></i> Daily: 9 am - 9 pm</li>
+                        <li><i class="icon-coffee"></i> Breakfast, Lunch, Dinner</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Stay updated with our latest offers and events.</p>
+                    <form id="newsletter-form" class="newsletter-form">
+                        <input type="email" id="email-input" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Heart & Hearth. All rights reserved.</p>
+                </div>
+        </footer>
+
+    </div>
+
+    <!-- Overlay Used for Modal Popout -->
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="./src/menu.js"></script>
+    <script src="./src/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Rewards Dashboard</title>
+    <link rel="stylesheet" href="./css/account.css">
+</head>
+<body>
+    <div class="min-h-screen bg-gradient">
+        <!-- Header section -->
+        <header class="header">
+            <div class="container">
+                <a href="loyalty.html" class="back-link">
+                    ⬅️ Back to Rewards
+                </a>
+                <div class="settings-dropdown">
+                    <button id="settingsButton" class="icon-button">
+                        <span>⚙️ Settings</span>
+                    </button>
+                    <div id="settingsDropdown" class="dropdown-content">
+                        <span class="dropdown-label">My Account</span>
+                        <button id="profileSettingsButton">Profile Settings</button>
+                        <button id="logoutButton">
+                            🚪 Log Out
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main content section -->
+        <main class="container">
+            <!-- User Information Card -->
+            <div class="card user-info">
+                <div class="user-welcome">
+                    <h1>Welcome back, <span id="userName">Ashton</span>!</h1>
+                    <div class="tier-info">
+                        👑 <span id="userTier">Bronze Member</span>
+                    </div>
+                </div>
+                <div class="points-display">
+                    <span id="userPoints">75</span>
+                    <span>Points</span>
+                </div>
+            </div>
+
+            <!-- Tier Progress Card -->
+            <div class="card tier-progress">
+                <div class="tier-labels">
+                    <span id="currentTier">Bronze</span>
+                    <span id="nextTier">Silver</span>
+                </div>
+                <div class="progress-bar">
+                    <div id="progressFill" class="progress-fill"></div>
+                </div>
+                <p class="progress-text"><span id="pointsToNext">25</span> points until next tier</p>
+            </div>
+
+            <!-- Tabs Section: Available Rewards and Activity History -->
+            <div class="tabs">
+                <button class="tab-button active" data-tab="rewards">Available Rewards</button>
+                <button class="tab-button" data-tab="activity">Activity History</button>
+            </div>
+
+            <div id="rewardsTab" class="tab-content active">
+                <div class="rewards-grid">
+                </div>
+            </div>
+
+            <div id="activityTab" class="tab-content">
+                <div class="card">
+                    <h2>Recent Activity</h2>
+                    <p>Your points history and redemptions</p>
+                    <div id="activityList" class="activity-list">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Profille settings modal -->
+        <div id="profileModal" class="modal">
+            <div class="modal-content">
+                <h2>Profile Settings</h2>
+                <p>Update your profile information and preferences</p>
+                <form id="profileForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">New Password</label>
+                        <input type="password" id="password" placeholder="Leave blank to keep current">
+                    </div>
+                    <div class="form-group">
+                        <label for="notifications">Email Notifications</label>
+                        <div class="switch">
+                            <input type="checkbox" id="notifications" checked>
+                            <span class="slider"></span>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" id="cancelProfileButton">Cancel</button>
+                        <button type="submit">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./src/account.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Heart & Hearth</title>
+    <link rel="stylesheet" href="./css/cafe.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="./res/img/cafe.png" alt="Cafe Logo">
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="cafe.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html" class=active>Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="login-signup">
+            <a href="loyalty.html" class="login-signup-button"> Login / Sign Up </a>
+        </div>
+    </header>
+    
+    <!-- Landing Page -->
+    <section class="landing-page contact-reservation" id="contact">
+        <div class="overlay"></div>
+        <img src="https://images.unsplash.com/photo-1415226581130-91cb7f52f078?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="background-image" alt="Landing Image">
+        <div class="content-wrapper">
+            <div class="caption-container">
+                <h2>Get In Touch</h2>
+                <p>We'd love to hear from you! Whether you have a question about our menu, want to book an event, or just want to say hello, we're here to listen.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get In Touch Section -->
+    <section class="get-in-touch">
+        <div class="container">
+            <div class="section-header">
+                <h2>Enquiry and Feedback</h2>
+            </div>
+
+            <div class="contact-info-grid">
+                <div class="info-box">
+                    <div class="icon">📍</div>
+                    <h3>Our Location</h3>
+                    <p>123 Hanway Extension,<br>Milton Villa City, UK</p>
+                </div>
+                <div class="info-box">
+                    <div class="icon">📞</div>
+                    <h3>Call US</h3>
+                    <p>Enquiry : (00) 123 456 788<br>Booking : (00) 123 456 789</p>
+                </div>
+                <div class="info-box">
+                    <div class="icon">✉️</div>
+                    <h3>Mail Us</h3>
+                    <p>Email: <a href="mailto:heart&hearth@gmail.com">heart&hearth@gmail.com</a><br>Support: <a href="mailto:support@heartandhearth.com">support@heartandhearth.com</a></p>
+                </div>
+                <div class="info-box">
+                    <div class="icon">🕒</div>
+                    <h3>Opening Hours</h3>
+                    <p> Daily: 9am - 9pm </p>
+                </div>
+            </div>
+
+            <!-- Enhanced Reservation Button -->
+            <div class="reservation-cta">
+                <h2>Ready to Dine with Us?</h2>
+                <p>Experience the warmth and flavors of Heart & Hearth. Book your table now!</p>
+                <a href="reserve.html" class="reservation-button">Make a Reservation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <div class="container">
+            <h2>TALK WITH US</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" name="fullname" placeholder="Full name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.654246115681!2d-87.78192968455169!3d41.89538087922173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C+IL!5e0!3m2!1sen!2sus!4v1549457233159"
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer class="cafe-footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <img src="./res/img/cafe.png" alt="Heart & Hearth" class="footer-logo">
+            <p class="footer-tagline">Crafting moments of warmth and connection, one cup at a time.</p>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a>
+              <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+            </div>
+          </div>
+          
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="icon-map-pin"></i> 123 Hanway Extension, Milton Villa City, UK</li>
+              <li><i class="icon-mail"></i> info@heartandhearth.com</li>
+              <li><i class="icon-phone"></i> +44 (123) 456 7890</li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h3>Opening Hours</h3>
+            <ul>
+              <li><i class="icon-clock"></i> Daily: 9 am - 9 pm</li>
+              <li><i class="icon-coffee"></i> Breakfast, Lunch, Dinner</li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>Stay updated with our latest offers and events.</p>
+            <form id="newsletter-form" class="newsletter-form">
+              <input type="email" id="email-input" placeholder="Your email address" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2024 Heart & Hearth. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./src/cafe.js"></script>
+    <script src="./src/script.js"></script>
+</body>
+</html>

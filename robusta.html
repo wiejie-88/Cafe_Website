@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robusta Blend - Heart & Hearth</title>
+    <link rel="stylesheet" href="./css/product-detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    <div class="bg-coffee-beans"></div>
+
+    <!-- Product detail section -->
+    <main class="product-detail">
+        <div class="container">
+            <nav class="back-nav">
+                <a href="shop.html" class="back-button">&larr; BACK</a>
+            </nav>
+
+            <!-- Product images -->
+            <div class="product-layout">
+                <div class="product-gallery">
+                    <div class="gallery-thumbnails">
+                        <button class="thumb active">
+                            <img src="https://deansbeans.com/cdn/shop/products/1668be6d5f748f4eb91cd3d1bd2e3264_2048x2048.jpg?v=1700232006" alt="Robusta Blend View 1">
+                        </button>
+                        <button class="thumb">
+                            <img src="https://media.barchart.com/contributors-admin/common-images/images/Soft%20Commodities/Coffee/shutterstock_1728806332.jpg" alt="Robusta Blend View 2">
+                        </button>
+                        <button class="thumb">
+                            <img src="https://ultrainternational.com/wp-content/uploads/2022/06/Untitled-design-30.png" alt="Robusta Blend View 3">
+                        </button>
+                    </div>
+                    <div class="gallery-main">
+                        <img src="https://deansbeans.com/cdn/shop/products/1668be6d5f748f4eb91cd3d1bd2e3264_2048x2048.jpg?v=1700232006" alt="Robusta Blend">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1>Robusta Blend</h1>
+                    <div class="price">$27.00</div>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="reviews-count">(20 reviews)</span>
+                    </div>
+                    <div class="description">
+                        <p>Experience the bold and intense flavors of our Robusta Blend. This coffee offers a strong, full-bodied taste with earthy notes and a hint of dark chocolate. Perfect for those who enjoy a powerful cup with higher caffeine content.</p>
+                    </div>
+                    <form class="add-to-cart-form">
+                        <div class="quantity">
+                            <button type="button" class="qty-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="99">
+                            <button type="button" class="qty-btn plus">+</button>
+                        </div>
+                        <button type="submit" class="add-to-cart-btn">ADD TO CART</button>
+                    </form>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <span class="label">SKU:</span>
+                            <span class="value">RB005</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">Category:</span>
+                            <a href="#" class="value">Coffee</a>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">Tags:</span>
+                            <a href="#" class="value">Robusta</a>, <a href="#" class="value">Strong</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="description">DESCRIPTION</button>
+                    <button class="tab-btn" data-tab="additional">ADDITIONAL INFORMATION</button>
+                    <button class="tab-btn" data-tab="reviews">REVIEWS (20)</button>
+                </div>
+
+                <!-- Product description -->
+                <div class="tabs-content">
+                    <div class="tab-panel active" id="description">
+                        <p>Our Robusta Blend is crafted for coffee enthusiasts who appreciate a bold, intense flavor profile. This blend combines high-quality Robusta beans, known for their higher caffeine content and strong taste, with a small portion of Arabica beans to add complexity and balance.</p>
+                        <p>The result is a full-bodied coffee with a deep, rich flavor that features earthy notes and a subtle hint of dark chocolate. Its robust character makes it an excellent choice for those who enjoy their coffee strong and flavorful, whether brewed as espresso or in a drip machine.</p>
+                    </div>
+                    <div class="tab-panel" id="additional">
+                        <table class="additional-info">
+                            <tr>
+                                <th>Roast Level</th>
+                                <td>Medium-Dark</td>
+                            </tr>
+                            <tr>
+                                <th>Origin</th>
+                                <td>Vietnam, Indonesia</td>
+                            </tr>
+                            <tr>
+                                <th>Flavor Profile</th>
+                                <td>Earthy, Dark Chocolate, Strong</td>
+                            </tr>
+                            <tr>
+                                <th>Size</th>
+                                <td>12 oz (340g)</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Reviews-->
+                    <div class="tab-panel" id="reviews">
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="stars">★★★★★</span>
+                                <span class="author">by Strong Coffee Lover</span>
+                            </div>
+                            <p>This Robusta Blend is exactly what I've been looking for. It's bold, intense, and gives me the caffeine kick I need in the morning. The earthy flavors are fantastic!</p>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="stars">★★★★☆</span>
+                                <span class="author">by Espresso Enthusiast</span>
+                            </div>
+                            <p>Makes a great espresso with a thick crema. The flavor is strong but not bitter. It's become my go-to for afternoon pick-me-ups.</p>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="stars">★★★★☆</span>
+                                <span class="author">by Coffee Explorer</span>
+                            </div>
+                            <p>Interesting blend with a unique flavor profile. The earthiness is prominent, and the dark chocolate notes add a nice depth. It's strong, so be prepared!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related products -->
+            <div class="related-products">
+                <h2>RELATED PRODUCTS</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="french-roast.html">
+                                <img src="https://i5.walmartimages.com/asr/4f2340f4-6522-41a1-8978-69e063a9c389.bf6a7a79c1f14549bad7692216ffe7b3.jpeg" alt="French Roast">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="french-roast.html">French Roast</a></h3>
+                            <div class="rating">★★★★★</div>
+                            <span class="price">$35.00</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="dark-roast.html">
+                                <img src="https://i.pinimg.com/564x/54/10/99/5410999db531607582316fe1866d99cd.jpg" alt="Dark Roast">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="dark-roast.html">Dark Roast</a></h3>
+                            <div class="rating">★★★★☆</div>
+                            <span class="price">$24.00</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="breakfast-blend.html">
+                                <img src="https://groundsandhoundscoffee.com/cdn/shop/files/Homeward-Blend_c4434128-12fb-4740-a695-2943a3462526_5000x.jpg?v=1691593418" alt="Breakfast Blend">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="breakfast-blend.html">Breakfast Blend</a></h3>
+                            <div class="rating">★★★★☆</div>
+                            <span class="price">$22.99</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="house-blend.html">
+                                <img src="https://static.wixstatic.com/media/a0bd2c_57e9ff0ab4de458fb651596760282e5f~mv2.png/v1/fill/w_520,h_420,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a0bd2c_57e9ff0ab4de458fb651596760282e5f~mv2.png" alt="House Blend">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="house-blend.html">House Blend</a></h3>
+                            <div class="rating">★★★★★</div>
+                            <span class="price">$25.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./src/product-detail.js"></script>
+</body>
+</html>

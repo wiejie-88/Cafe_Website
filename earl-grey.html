@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earl Grey - Heart & Hearth</title>
+    <link rel="stylesheet" href="./css/product-detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    <div class="bg-tea-leaves"></div>
+
+    <!-- Product detail section -->
+    <main class="product-detail">
+        <div class="container">
+            <nav class="back-nav">
+                <a href="shop.html" class="back-button">&larr; BACK</a>
+            </nav>
+
+            <!-- Product images -->
+            <div class="product-layout">
+                <div class="product-gallery">
+                    <div class="gallery-thumbnails">
+                        <button class="thumb active">
+                            <img src="https://down-my.img.susercontent.com/file/id-11134207-7r98w-lw5ah4y2ep23cf.webp" alt="Earl Grey View 1">
+                        </button>
+                        <button class="thumb">
+                            <img src="https://www.thewhistlingkettle.com/cdn/shop/files/EarlGreyCreamPromo7.jpg?v=1712943091&width=1024" alt="Earl Grey View 2">
+                        </button>
+                        <button class="thumb">
+                            <img src="https://www.thewhistlingkettle.com/cdn/shop/files/EarlGreyCreamDisplayPhoto01.jpg?v=1712943091&width=1024" alt="Earl Grey View 3">
+                        </button>
+                    </div>
+                    <div class="gallery-main">
+                        <img src="https://down-my.img.susercontent.com/file/id-11134207-7r98w-lw5ah4y2ep23cf.webp" alt="Earl Grey">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1>Earl Grey</h1>
+                    <div class="price">$18.00</div>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="reviews-count">(45 reviews)</span>
+                    </div>
+                    <div class="description">
+                        <p>Indulge in the classic elegance of our Earl Grey tea. This timeless blend combines premium black tea with the distinctive citrusy notes of bergamot oil, creating a sophisticated and refreshing cup that's perfect for any time of day.</p>
+                    </div>
+                    <form class="add-to-cart-form">
+                        <div class="quantity">
+                            <button type="button" class="qty-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="99">
+                            <button type="button" class="qty-btn plus">+</button>
+                        </div>
+                        <button type="submit" class="add-to-cart-btn">ADD TO CART</button>
+                    </form>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <span class="label">SKU:</span>
+                            <span class="value">EG003</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">Category:</span>
+                            <a href="#" class="value">Tea</a>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">Tags:</span>
+                            <a href="#" class="value">Black Tea</a>, <a href="#" class="value">Bergamot</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="description">DESCRIPTION</button>
+                    <button class="tab-btn" data-tab="additional">ADDITIONAL INFORMATION</button>
+                    <button class="tab-btn" data-tab="reviews">REVIEWS (45)</button>
+                </div>
+
+                <!-- Product description -->
+                <div class="tabs-content">
+                    <div class="tab-panel active" id="description">
+                        <p>Our Earl Grey is a refined blend of high-quality black tea leaves infused with the essence of bergamot, a citrus fruit native to Italy. This aromatic combination results in a tea with a bright flavor and a distinctive floral aroma that has made it a beloved classic for centuries.</p>
+                        <p>The black tea base provides a robust foundation, while the bergamot oil adds a layer of complexity with its citrusy and slightly floral notes. This balance creates a tea that is both invigorating and soothing, suitable for morning pick-me-ups or afternoon refreshment.</p>
+                    </div>
+                    <div class="tab-panel" id="additional">
+                        <table class="additional-info">
+                            <tr>
+                                <th>Origin</th>
+                                <td>Blend of teas from India and Sri Lanka</td>
+                            </tr>
+                            <tr>
+                                <th>Ingredients</th>
+                                <td>Black Tea, Natural Bergamot Flavor</td>
+                            </tr>
+                            <tr>
+                                <th>Flavor Profile</th>
+                                <td>Citrusy, Floral, Bold</td>
+                            </tr>
+                            <tr>
+                                <th>Size</th>
+                                <td>100g (3.53 oz)</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Reviews-->
+                    <div class="tab-panel" id="reviews">
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="stars">★★★★★</span>
+                                <span class="author">by Tea Connoisseur</span>
+                            </div>
+                            <p>This Earl Grey is exceptional! The bergamot flavor is perfectly balanced, not overpowering like some other brands. It's become my daily afternoon tea.</p>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="stars">★★★★★</span>
+                                <span class="author">by Citrus Lover</span>
+                            </div>
+                            <p>The aroma of this tea is divine. It's a high-quality Earl Grey that stands out from the rest. Smooth and flavorful, with just the right amount of bergamot.</p>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="stars">★★★★☆</span>
+                                <span class="author">by Morning Person</span>
+                            </div>
+                            <p>A great way to start the day! This Earl Grey has a robust flavor that wakes me up and gets me going. The citrusy notes are refreshing and uplifting.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related products -->
+            <div class="related-products">
+                <h2>RELATED PRODUCTS</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="english-breakfast.html">
+                                <img src="https://www.goodandpropertea.com/cdn/shop/products/a0f19dc0-370d-4d7a-b6be-83e7d6f4ef36_1296x.png?v=1668422965/placeholder.svg?height=400&width=400" alt="English Breakfast">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="english-breakfast.html">English Breakfast</a></h3>
+                            <div class="rating">★★★★★</div>
+                            <span class="price">$29.00</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="sencha-gt.html">
+                                <img src="https://bellevue-tea.co.uk/cdn/shop/products/senchagreenpacket_bagVitty_1953x.jpg?v=1648640927" alt="Sencha Green Tea">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="sencha-grt.html">Sencha Green Tea</a></h3>
+                            <div class="rating">★★★★☆</div>
+                            <span class="price">$24.00</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="chamomile.html">
+                                <img src="https://www.theteamakers.co.uk/cdn/shop/products/PR8E9A_2.jpg?v=1694174852&width=700" alt="Chamomile Blossoms">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="chamomile.html">Chamomile Blossoms</a></h3>
+                            <div class="rating">★★★★☆</div>
+                            <span class="price">$22.00</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="matcha.html">
+                                <img src="https://www.the-matcha.tokyo/cdn/shop/products/200414_001.jpg?v=1587911961" alt="Matcha Green Tea">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="matcha.html">Matcha Green Tea</a></h3>
+                            <div class="rating">★★★★★</div>
+                            <span class="price">$20.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./src/product-detail.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast Blend - Heart & Hearth</title>
+    <link rel="stylesheet" href="./css/product-detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    <div class="bg-coffee-beans"></div>
+
+    <!-- Product detail section -->
+    <main class="product-detail">
+        <div class="container">
+            <nav class="back-nav">
+                <a href="shop.html" class="back-button">&larr; BACK</a>
+            </nav>
+
+            <!-- Product images -->
+            <div class="product-layout">
+                <div class="product-gallery">
+                    <div class="gallery-thumbnails">
+                        <button class="thumb active">
+                            <img src="https://groundsandhoundscoffee.com/cdn/shop/files/Homeward-Blend_c4434128-12fb-4740-a695-2943a3462526_5000x.jpg?v=1691593418" alt="Breakfast Blend View 1">
+                        </button>
+                        <button class="thumb">
+                            <img src="https://www.mkcfoodproducts.com/images/products/hotel-blend-coffee-blends.jpg" alt="Breakfast Blend View 2">
+                        </button>
+                        <button class="thumb">
+                            <img src="https://www.neighbourhoodcoffee.co.uk/app/uploads/2022/06/pexels-maria-orlova-4940744-1200x675.jpg" alt="Breakfast Blend View 3">
+                        </button>
+                    </div>
+                    <div class="gallery-main">
+                        <img src="https://groundsandhoundscoffee.com/cdn/shop/files/Homeward-Blend_c4434128-12fb-4740-a695-2943a3462526_5000x.jpg?v=1691593418" alt="Breakfast Blend">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1>Breakfast Blend</h1>
+                    <div class="price">$28.00</div>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="reviews-count">(18 reviews)</span>
+                    </div>
+                    <div class="description">
+                        <p>Start your day right with our Breakfast Blend. This light to medium roast coffee offers a bright, crisp flavor with subtle notes of citrus and nuts. It's the perfect balance of smoothness and energy to kickstart your morning.</p>
+                    </div>
+                    <form class="add-to-cart-form">
+                        <div class="quantity">
+                            <button type="button" class="qty-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="99">
+                            <button type="button" class="qty-btn plus">+</button>
+                        </div>
+                        <button type="submit" class="add-to-cart-btn">ADD TO CART</button>
+                    </form>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <span class="label">SKU:</span>
+                            <span class="value">BB003</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">Category:</span>
+                            <a href="#" class="value">Coffee</a>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">Tags:</span>
+                            <a href="#" class="value">Light Roast</a>, <a href="#" class="value">Morning</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="description">DESCRIPTION</button>
+                    <button class="tab-btn" data-tab="additional">ADDITIONAL INFORMATION</button>
+                    <button class="tab-btn" data-tab="reviews">REVIEWS (18)</button>
+                </div>
+
+                <!-- Product description -->
+                <div class="tabs-content">
+                    <div class="tab-panel active" id="description">
+                        <p>Our Breakfast Blend is crafted to be the perfect morning companion. This light to medium roast combines carefully selected beans to create a bright, invigorating cup that gently eases you into your day.</p>
+                        <p>With its crisp acidity and smooth body, this blend offers a clean, refreshing taste with subtle notes of citrus and nuts. It's an ideal choice for those who prefer a milder coffee that still packs enough flavor and caffeine to jumpstart their morning.</p>
+                    </div>
+                    <div class="tab-panel" id="additional">
+                        <table class="additional-info">
+                            <tr>
+                                <th>Roast Level</th>
+                                <td>Light to Medium</td>
+                            </tr>
+                            <tr>
+                                <th>Origin</th>
+                                <td>Central and South America</td>
+                            </tr>
+                            <tr>
+                                <th>Flavor Profile</th>
+                                <td>Citrus, Nuts, Smooth</td>
+                            </tr>
+                            <tr>
+                                <th>Size</th>
+                                <td>12 oz (340g)</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Reviews-->
+                    <div class="tab-panel" id="reviews">
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="stars">★★★★★</span>
+                                <span class="author">by Early Riser</span>
+                            </div>
+                            <p>This is my go-to morning coffee. It's light enough to drink black but still has a rich flavor. The citrus notes really shine through and make for a refreshing start to the day.</p>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="stars">★★★★☆</span>
+                                <span class="author">by Coffee Newbie</span>
+                            </div>
+                            <p>As someone new to drinking coffee, this blend is perfect. It's not too strong or bitter, and the nutty flavor is really pleasant. Great with a splash of milk!</p>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="stars">★★★★★</span>
+                                <span class="author">by Breakfast Enthusiast</span>
+                            </div>
+                            <p>This coffee pairs perfectly with my morning routine. It's bright and flavorful without being overpowering. Definitely lives up to its name as a breakfast blend.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related products -->
+            <div class="related-products">
+                <h2>RELATED PRODUCTS</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="robusta.html">
+                                <img src="https://deansbeans.com/cdn/shop/products/1668be6d5f748f4eb91cd3d1bd2e3264_2048x2048.jpg?v=1700232006" alt="Robusta">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="robusta.html">Robusta</a></h3>
+                            <div class="rating">★★★★★</div>
+                            <span class="price">$21.99</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="dark-roast.html">
+                                <img src="https://i.pinimg.com/564x/54/10/99/5410999db531607582316fe1866d99cd.jpg" alt="Dark Roast">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="dark-roast.html">Dark Roast</a></h3>
+                            <div class="rating">★★★★☆</div>
+                            <span class="price">$22.99</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="espresso.html">
+                                <img src="https://patagoniachocolates.co.nz/assets/Uploads/_resampled/CroppedImage637546-Coffee-Espresso-1.jpg" alt="Espresso">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="espresso.html">Espresso</a></h3>
+                            <div class="rating">★★★★☆</div>
+                            <span class="price">$19.99</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="house-blend.html">
+                                <img src="https://static.wixstatic.com/media/a0bd2c_57e9ff0ab4de458fb651596760282e5f~mv2.png/v1/fill/w_520,h_420,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a0bd2c_57e9ff0ab4de458fb651596760282e5f~mv2.png" alt="House Blend">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="house-blend.html">House Blend</a></h3>
+                            <div class="rating">★★★★☆</div>
+                            <span class="price">$19.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./src/product-detail.js"></script>
+</body>
+</html>

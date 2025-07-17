@@ -1,0 +1,494 @@
+/* General styling for the body */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Styles for the main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    width: 100%;
+}
+
+
+/* Styles for the party booking section */
+#party-booking {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#party-booking h2 {
+    font-size: 2.5em;
+    color: #4B3D31;
+    margin-bottom: 20px;
+    font-weight: 600; 
+}
+
+#party-booking p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px; 
+}
+
+
+#party-booking form {
+    text-align: left; 
+}
+
+
+#party-booking input[type="text"],
+#party-booking input[type="email"],
+#party-booking input[type="tel"],
+#party-booking input[type="date"],
+#party-booking select {
+    width: 100%; 
+    padding: 12px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+#party-booking input:focus,
+#party-booking select:focus {
+    border-color: #4B3D31; 
+}
+
+
+#time-slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#time-slots input[type="radio"] {
+    display: none;
+}
+
+#time-slots label {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 1em;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#time-slots input[type="radio"]:checked + label {
+    background-color: #4B3D31;
+    color: #fff;
+    border-color: #4B3D31;
+}
+
+#time-slots input[type="radio"]:disabled + label {
+    color: #aaa;
+}
+
+
+#party-booking button {
+    background-color: #4B3D31;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; 
+}
+
+#party-booking button:hover {
+    background-color: #6B7C6A;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 10; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s ease; 
+}
+
+.modal-content h3 {
+    font-size: 1.8em;
+    color: #4B3D31;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #000;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4B3D31;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #6B7C6A;
+}
+
+
+
+/* Header */
+.logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 60px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px; 
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-size: 1em;
+
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d19531; 
+}
+
+
+nav ul li a.active {
+    color: #d19531; 
+    font-weight: bold;
+}
+
+.cart {
+    position: absolute;
+    right: 150px;
+
+}
+.cart a img {
+    width: 30px;
+    height: auto;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #5d3722;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    overflow: visible;
+    min-height: 7.5rem;
+}
+
+
+
+.header-content {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+header.hide-nav {
+    transform: translateY(-100%); 
+}
+
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #d48827;
+}
+
+
+/* Footer */
+.cafe-footer {
+    width: 100%;
+    background-color: #1a0f0f;
+    color: #f5e8dc;
+    padding: 4rem 1rem;
+    font-family: 'Arial', sans-serif;
+    }
+    
+    .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    }
+    
+    .footer-section {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .footer-logo {
+    width: 120px;
+    margin-bottom: 1rem;
+    }
+    
+    .footer-tagline {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    }
+    
+    .social-icons {
+    display: flex;
+    gap: 1rem;
+    }
+    
+    .social-icons a {
+    color: #d48827;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    }
+    
+    .social-icons a:hover {
+    color: #f5e8dc;
+    }
+    
+    .footer-section h3 {
+    color: #d48827;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    }
+    
+    .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    }
+    
+    .footer-section ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    }
+    
+    .footer-section ul li i {
+    color: #d48827;
+    margin-right: 0.5rem;
+    }
+    
+    .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    }
+    
+    .newsletter-form input {
+    padding: 0.5rem;
+    background-color: #2c1a1a;
+    border: 1px solid #d48827;
+    color: #f5e8dc;
+    border-radius: 4px;
+    }
+    
+    .newsletter-form button {
+    padding: 0.5rem;
+    background-color: #d48827;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+    
+    .newsletter-form button:hover {
+    background-color: #b36d1f;
+    }
+    
+    .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #d48827;
+    }
+
+
+
+    /* Responsive Design */
+    /* Mobile */
+@media (max-width: 600px) {
+    .container {
+        margin-top: 5rem;
+    }
+
+    
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .cart a img {
+        width: 24px;
+    }
+
+    
+    #party-booking {
+        padding: 20px;
+        width: 90%;
+    }
+
+    #party-booking h2 {
+        font-size: 1.8em;
+    }
+
+    #time-slots {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-logo {
+        width: 80px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .container {
+        margin-top: 7rem;
+    }
+
+    header {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    #party-booking {
+        max-width: 80%;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-section h3 {
+        font-size: 1.1rem;
+    }
+}
+
+    

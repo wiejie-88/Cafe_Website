@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Heart & Hearth</title>
+    <link rel="stylesheet" href="./css/cafe.css">
+    <link rel="stylesheet" href="./css/shop.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="./res/img/cafe.png" alt="Cafe Logo">
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="cafe.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="login-signup">
+            <a href="loyalty.html" class="login-signup-button"> Login / Sign Up </a>
+        </div>
+    </header>
+    
+<!-- Landing Page -->
+<section class="landing-page contact-reservation" id="reservation">
+    <div class="overlay"></div>
+    <img src="https://images.unsplash.com/photo-1482350325005-eda5e677279b?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="background-image" alt="Landing Image">
+    <div class="content-wrapper">
+        <div class="caption-container">
+            <h2>Get Our Top Quality Product Today!</h2>
+        </div>
+    </div>
+</section>
+
+    <!-- Shop Header -->
+    <header class="shop-header">
+        <div class="container">
+            <div class="shop-controls">
+                <div class="results-count">Showing 1–12 of 22 results</div>
+                <div class="shop-actions">
+                    <select class="sorting-dropdown">
+                        <option value="default">Default sorting</option>
+                        <option value="popularity">Sort by popularity</option>
+                        <option value="rating">Sort by average rating</option>
+                        <option value="latest">Sort by latest</option>
+                        <option value="price-low">Sort by price: low to high</option>
+                        <option value="price-high">Sort by price: high to low</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Shop Content -->
+    <main class="shop-content">
+        <div class="container">
+            
+            <!-- Tab Navigation -->
+            <div class="tab-navigation">
+                <button class="tab-link active" data-tab="courses" onclick="openTab(event, 'courses')">Courses</button>
+                <button class="tab-link" data-tab="coffee" onclick="openTab(event, 'coffee-beans')">Coffee Beans</button>
+                <button class="tab-link" data-tab="tea" onclick="openTab(event, 'tea')">Tea</button>
+            </div>
+    
+            <div class="shop-layout">
+                <!-- Sidebar -->
+                <aside class="shop-sidebar">
+                    <div class="filter-section">
+                        <h3>FILTER</h3>
+                        <div class="price-filter">
+                            <h4>PRICE</h4>
+                            <input type="range" min="10" max="200" value="10" class="price-slider" id="priceSlider">
+                            <div class="price-inputs">
+                                <span id="minPrice">$10</span>
+                                <span id="max-Price">$200</span>
+                            </div>
+                            <button class="filter-button" id="applyFilter">APPLY FILTER</button>
+                        </div>
+                    </div>
+    
+                    <div class="categories-section">
+                        <h3>CATEGORIES</h3>
+                        <ul>
+                            <li><a href="#">Single-Origin Coffee</a></li>
+                            <li><a href="#">Blended Coffee</a></li>
+                            <li><a href="#">Loose Leaf Tea</a></li>
+                            <li><a href="#">Tea Bags</a></li>
+                            <li><a href="#">Coffee Brewing Courses</a></li>
+                            <li><a href="#">Tea Appreciation Courses</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="latest-products">
+                        <h3>LATEST PRODUCTS</h3>
+                        <div class="mini-products">
+                            <div class="mini-product">
+                                <img src="https://pullandpourcoffee.com/wp-content/uploads/2018/09/the-basics-of-coffee.jpg" alt="Barista Basics">
+                                <div class="mini-product-info">
+                                    <h4>Barista Basics</h4>
+                                    <span class="price">$99</span>
+                                </div>
+                            </div>
+                            <div class="mini-product">
+                                <img src="https://i5.walmartimages.com/asr/4f2340f4-6522-41a1-8978-69e063a9c389.bf6a7a79c1f14549bad7692216ffe7b3.jpeg" alt="French Roast">
+                                <div class="mini-product-info">
+                                    <h4>French Roast</h4>
+                                    <span class="price">$25</span>
+                                </div>
+                            </div>
+                            <div class="mini-product">
+                                <img src="https://bellevue-tea.co.uk/cdn/shop/products/senchagreenpacket_bagVitty_1953x.jpg?v=1648640927" alt="Green Sencha">
+                                <div class="mini-product-info">
+                                    <h4>Green Sencha</h4>
+                                    <span class="price">$18</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+    
+                <!-- Product Grid -->
+                <div class="products-grid">
+    
+                    <!-- Courses Tab -->
+                    <div id="courses" class="tab-content active">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <span class="badge new">NEW</span>
+                                <a href="coffee-rf.html">
+                                    <img src="https://pullandpourcoffee.com/wp-content/uploads/2018/09/the-basics-of-coffee.jpg" alt="Barista Basics">
+                                </a>
+                                <button class="add-to-cart">ADD TO CART</button>
+                            </div>
+                            <div class="product-info">
+                                <h3><a href="coffee-rf.html">Coffee Roasting Fundamentals</a></h3>
+                                <div class="rating">★★★★☆</div>
+                                <span class="price">$99</span>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <a href="adv-bt.html">
+                                    <img src="https://images.squarespace-cdn.com/content/v1/6396feee1e3a88381e12417e/1686615659311-SN3RQY2VUI0UAERGEAIW/Advance+Barista+Techniques.jpg?format=2500w" alt="Advanced Brewing Techniques">
+                                </a>
+                                <button class="add-to-cart">ADD TO CART</button>
+                            </div>
+                            <div class="product-info">
+                                <h3><a href="adv-bt.html">Advanced Brewing Techniques</a></h3>
+                                <div class="rating">★★★★★</div>
+                                <span class="price">$129</span>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <a href="latte-aw.html">
+                                    <img src="https://busybee.com.mt/wp-content/uploads/2022/01/coffee_cover_3-scaled.webp" alt="Latte Art Workshop">
+                                </a>
+                                <button class="add-to-cart">ADD TO CART</button>
+                            </div>
+                            <div class="product-info">
+                                <h3><a href="latte-aw.html">Latte Art Workshop</a></h3>
+                                <div class="rating">★★★★☆</div>
+                                <span class="price">$79</span>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <a href="espresso-m.html">
+                                    <img src="https://ninefine.de/cdn/shop/articles/Esspresso_blog.png?v=1705775718&width=1500" alt="Espresso Mastery">
+                                </a>
+                                <button class="add-to-cart">ADD TO CART</button>
+                            </div>
+                            <div class="product-info">
+                                <h3><a href="espresso-m.html">Espresso Mastery</a></h3>
+                                <div class="rating">★★★★☆</div>
+                                <span class="price">$119</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coffee Beans Tab -->
+                    <div id="coffee" class="tab-content">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <span class="badge new">NEW</span>
+                                <a href="house-blend.html">
+                                    <img src="https://static.wixstatic.com/media/a0bd2c_57e9ff0ab4de458fb651596760282e5f~mv2.png/v1/fill/w_520,h_420,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a0bd2c_57e9ff0ab4de458fb651596760282e5f~mv2.png" alt="house blend">
+                                </a>
+                                <button class="add-to-cart">ADD TO CART</button>
+                            </div>
+                            <div class="product-info">
+                                <h3><a href="house-blend.html">House Blend</a></h3>
+                                <div class="rating">★★★★★</div>
+                                <span class="price">$25</span>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <a href="french-roast.html">
+                                    <img src="https://i5.walmartimages.com/asr/4f2340f4-6522-41a1-8978-69e063a9c389.bf6a7a79c1f14549bad7692216ffe7b3.jpeg" alt="French Roast">
+                                </a>
+                                <button class="add-to-cart">ADD TO CART</button>
+                            </div>
+                            <div class="product-info">
+                                <h3><a href="french-roast.html">French Roast</a></h3>
+                                <div class="rating">★★★★☆</div>
+                                <span class="price">$30</span>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <a href="breakfast-blend.html">
+                                    <img src="https://groundsandhoundscoffee.com/cdn/shop/files/Homeward-Blend_c4434128-12fb-4740-a695-2943a3462526_5000x.jpg?v=1691593418" alt="Breakfast Blend">
+                                </a>
+                                <button class="add-to-cart">ADD TO CART</button>
+                            </div>
+                            <div class="product-info">
+                                <h3><a href="breakfast-blend.html">Breakfast Blend</a></h3>
+                                <div class="rating">★★★★☆</div>
+                                <span class="price">$28</span>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <a href="espresso.html">
+                                    <img src="https://patagoniachocolates.co.nz/assets/Uploads/_resampled/CroppedImage637546-Coffee-Espresso-1.jpg" alt="Espresso">
+                                </a>
+                                <button class="add-to-cart">ADD TO CART</button>
+                            </div>
+                            <div class="product-info">
+                                <h3><a href="espresso.html">Espresso</a></h3>
+                                <div class="rating">★★★★★</div>
+                                <span class="price">$35</span>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <a href="robusta.html">
+                                    <img src="https://deansbeans.com/cdn/shop/products/1668be6d5f748f4eb91cd3d1bd2e3264_2048x2048.jpg?v=1700232006" alt="Robusta">
+                                </a>
+                                <button class="add-to-cart">ADD TO CART</button>
+                            </div>
+                            <div class="product-info">
+                                <h3><a href="robusta.html">Robusta</a></h3>
+                                <div class="rating">★★★★☆</div>
+                                <span class="price">$27</span>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <a href="dark-roast.html">
+                                    <img src="https://i.pinimg.com/564x/54/10/99/5410999db531607582316fe1866d99cd.jpg" alt="Dark roast">
+                                </a>
+                                <button class="add-to-cart">ADD TO CART</button>
+                            </div>
+                            <div class="product-info">
+                                <h3><a href="dark-roast.html">Dark roast</a></h3>
+                                <div class="rating">★★★★☆</div>
+                                <span class="price">$24</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tea Tab -->
+                    <div id="tea" class="tab-content">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <span class="badge new">NEW</span>
+                                <a href="matcha.html">
+                                    <img src="https://www.the-matcha.tokyo/cdn/shop/products/200414_001.jpg?v=1587911961" alt="Matcha Green Tea">
+                                </a>
+                                <button class="add-to-cart">ADD TO CART</button>
+                            </div>
+                            <div class="product-info">
+                                <h3><a href="matcha.html">Matcha Green Tea</a></h3>
+                                <div class="rating">★★★★★</div>
+                                <span class="price">$20</span>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <a href="chamomile.html">
+                                    <img src="https://www.theteamakers.co.uk/cdn/shop/products/PR8E9A_2.jpg?v=1694174852&width=700" alt="Chamomile Blossoms">
+                                </a>
+                                <button class="add-to-cart">ADD TO CART</button>
+                            </div>
+                            <div class="product-info">
+                                <h3><a href="chamomile.html">Chamomile Blossoms</a></h3>
+                                <div class="rating">★★★★☆</div>
+                                <span class="price">$22</span>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <a href="earl-grey.html">
+                                    <img src="https://down-my.img.susercontent.com/file/id-11134207-7r98w-lw5ah4y2ep23cf.webp" alt="Earl Grey">
+                                </a>
+                                <button class="add-to-cart">ADD TO CART</button>
+                            </div>
+                            <div class="product-info">
+                                <h3><a href="earl-grey.html">Earl Grey</a></h3>
+                                <div class="rating">★★★★★</div>
+                                <span class="price">$18</span>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <a href="jasmine-pearls.html">
+                                    <img src="https://www.goodandpropertea.com/cdn/shop/products/JasminePearls_Front_WR_1296x.jpg?v=1637255278" alt="Jasmine Pearls">
+                                </a>
+                                <button class="add-to-cart">ADD TO CART</button>
+                            </div>
+                            <div class="product-info">
+                                <h3><a href="jasmine-pearls.html">Jasmine Pearls</a></h3>
+                                <div class="rating">★★★★☆</div>
+                                <span class="price">$26</span>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <a href="sencha-gt.html">
+                                    <img src="https://bellevue-tea.co.uk/cdn/shop/products/senchagreenpacket_bagVitty_1953x.jpg?v=1648640927" alt="Sencha Green Tea">
+                                </a>
+                                <button class="add-to-cart">ADD TO CART</button>
+                            </div>
+                            <div class="product-info">
+                                <h3><a href="sencha-gt.html">Sencha Green Tea</a></h3>
+                                <div class="rating">★★★★☆</div>
+                                <span class="price">$24</span>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <a href="english-breakfast.html">
+                                    <img src="https://www.goodandpropertea.com/cdn/shop/products/a0f19dc0-370d-4d7a-b6be-83e7d6f4ef36_1296x.png?v=1668422965/placeholder.svg?height=400&width=400" alt="English Breakfast">
+                                </a>
+                                <button class="add-to-cart">ADD TO CART</button>
+                            </div>
+                            <div class="product-info">
+                                <h3><a href="english-breakfast.html">English Breakfast</a></h3>
+                                <div class="rating">★★★★★</div>
+                                <span class="price">$29</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--fdooter-->
+    <footer class="cafe-footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <img src="./res/img/cafe.png" alt="Heart & Hearth" class="footer-logo">
+            <p class="footer-tagline">Crafting moments of warmth and connection, one cup at a time.</p>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a>
+              <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+            </div>
+          </div>
+          
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="icon-map-pin"></i> 123 Hanway Extension, Milton Villa City, UK</li>
+              <li><i class="icon-mail"></i> info@heartandhearth.com</li>
+              <li><i class="icon-phone"></i> +44 (123) 456 7890</li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h3>Opening Hours</h3>
+            <ul>
+              <li><i class="icon-clock"></i> Daily: 9 am - 9 pm</li>
+              <li><i class="icon-coffee"></i> Breakfast, Lunch, Dinner</li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>Stay updated with our latest offers and events.</p>
+            <form id="newsletter-form" class="newsletter-form">
+              <input type="email" id="email-input" placeholder="Your email address" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2024 Heart & Hearth. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./src/cafe.js"></script>
+    <script src="./src/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart & Hearth</title>
+    <link rel="stylesheet" href="./css/cafe.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<!--Navigation Bar -->
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <img src="./res/img/cafe.png" alt="Cafe Logo">
+        </div>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="cafe.html" class="active">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="login-signup">
+        <a href="loyalty.html" class="login-signup-button">Login / Sign Up</a>
+    </div>
+</header>
+ 
+
+    
+<!-- Landing Page -->
+<section class="landing-page" id="home">
+    <div class="carousel-cont">
+        <video autoplay muted loop class="background-video" id="video1">
+            <source src="./res/vid/cafe1.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop class="background-video" id="video2">
+            <source src="./res/vid/cafe2.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop class="background-video" id="video3">
+            <source src="./res/vid/cafe3.mp4" type="video/mp4">
+        </video>
+
+        <div class="video-overlay"></div>
+
+        <div class="content-wrapper">
+            <div class="caption-container">
+                <div class="text-overlay" id="caption1">Heart <br> & <br> Hearth</div>
+                <div class="text-overlay" id="caption2">Brews <br> & <br> Bonds</div>
+                <div class="text-overlay" id="caption3"> Warmth <br> & <br> Company </div>
+            </div>
+            <a href="shop.html" class="view-shop">View Shop</a>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Subscription Popup -->
+<div class="newsletter-popup" id="newsletterPopup">
+    <div class="popup-content">
+        <div class="popup-header">
+            <img src="./res/img/cafe.png" alt="Logo" class="popup-logo"> 
+            <span class="close-popup" onclick="closePopup()">&times;</span>
+        </div>
+        <div class="popup-body">
+            <div class="popup-image">
+                <img src="https://media.tenor.com/Va6B9LeOeSYAAAAi/busy-time-going-to-the-office.gif" alt="Coffee Making"> <!-- Replace with your preferred image or animation -->
+            </div>
+            <div class="popup-text">
+                <h2>Stay Brewed In!</h2>
+                <p>Subscribe to our newsletter for exclusive offers, brewing tips, and cafe updates.</p>
+                <form id="newsletterForm">
+                    <input type="email" id="newsletterEmail" placeholder="Your email address" required>
+                    <button type="submit">Get Percolating!</button>
+                </form>
+                <p class="terms-text">By subscribing, you agree to our <a href="#terms">Terms & Conditions</a>.</p>
+            </div>            
+        </div>
+    </div>
+</div>
+
+</section>
+    <!-- What Makes Our Coffee Special -->
+    <section class="special-coffee" data-aos="fade-up">
+        <h2>What makes our <br>
+            <span>Coffee Special?</span>
+        </h2>
+        <div class="coffee-content">
+            <div class="coffee-text" data-aos="fade-right" data-aos-delay="100">
+                <div class="coffee-txt">
+                    <h3>The Beginning</h3>
+                    <p>Our journey starts with sourcing high-quality coffee seeds from trusted, sustainable farms. We prioritize quality from the very start to ensure each bean meets our standards.</p>
+                </div>
+                <div class="coffee-txt">
+                    <h3>Harvesting</h3>
+                    <p>During harvesting, only the ripest coffee cherries are handpicked by experienced farmers, ensuring optimal flavor and richness. This meticulous selection process sets the foundation for great coffee.</p>
+                </div>
+                <div class="coffee-txt">
+                    <h3>Post Harvesting</h3>
+                    <p>After harvesting, the beans go through a drying and processing stage to remove moisture and enhance their natural flavors, preparing them for the next steps in the journey.</p>
+                </div>
+            </div>
+        
+                <div class="coffee-image" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://ccreadysites.cyberchimps.com/coffee-plaza/wp-content/uploads/sites/191/2022/04/coffee-beans-1-450x463.png" alt="Coffee Beans">
+                </div>
+    
+            <div class="coffee-text" data-aos="fade-left" data-aos-delay="200">
+                <div class="coffee-txts">
+                    <h3>Green Bean Selection</h3>
+                    <p>Each green coffee bean undergoes a rigorous inspection to ensure it meets our quality and sustainability standards. Only the finest beans make it through to the next step.</p>
+                </div>
+                <div class="coffee-txts">
+                    <h3>First Cupping</h3>
+                    <p>Our expert cuppers taste the beans for quality, evaluating flavor, aroma, and body. This critical step helps us identify the unique characteristics of each batch.</p>
+                </div>
+                <div class="coffee-txts">
+                    <h3>Shipping</h3>
+                    <p>Once selected, our beans are carefully packed and shipped to ensure they reach you at peak freshness, ready to be enjoyed in every cup of coffee.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Top Sellers Section -->
+    <section class="top-sellers" id="top-sellers" data-aos="fade-up">
+        <h2>Our <span>Top Sellers</span></h2>
+        <div class="carousel">
+            <button class="carousel-btn" id="prevBtn"> ❮ </button>
+        <div class="carousel-container">
+            <div class="carousel-items">
+                <div class="carousel-item">
+                    <span class="sale-badge"> Sale! </span>
+                    <img src="https://ninefine.de/cdn/shop/articles/Esspresso_blog.png?v=1705775718&width=1500" alt="Espresso Mastery">
+                    <h4>Espresso Mastery</h4>
+                    <p class="price"><span>$4.99</span> $3.99</p>
+                    <p class="rating">★★★★☆</p>
+                    <div class="carousel-item-hover-overlay">
+                        <button class="btn" onclick="addToCart()">🛒</button>
+                        <button class="btn" onclick="previewProduct(this)" data-url="espresso-m.html">👁️</button>
+                        <button class="btn" onclick="goToShopPage()">🔗</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <span class="sale-badge"> Sale! </span>
+                    <img src="https://static.wixstatic.com/media/a0bd2c_57e9ff0ab4de458fb651596760282e5f~mv2.png/v1/fill/w_520,h_420,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a0bd2c_57e9ff0ab4de458fb651596760282e5f~mv2.png" alt="House Blend">
+                    <h4>House Blend</h4>
+                    <p class="price"><span>$4.99</span> $3.99</p>
+                    <p class="rating">★★★★☆</p>
+                    <div class="carousel-item-hover-overlay">
+                        <button class="btn" onclick="addToCart()">🛒</button>
+                        <button class="btn" onclick="previewProduct(this)" data-url="house-blend.html">👁️</button>
+                        <button class="btn" onclick="goToShopPage()">🔗</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <span class="sale-badge"> Sale! </span>
+                    <img src="https://patagoniachocolates.co.nz/assets/Uploads/_resampled/CroppedImage637546-Coffee-Espresso-1.jpg" alt="Espresso">
+                    <h4>Espresso</h4>
+                    <p class="price"><span>$4.99</span> $3.99</p>
+                    <p class="rating">★★★★★</p>
+                    <div class="carousel-item-hover-overlay">
+                        <button class="btn" onclick="addToCart()">🛒</button>
+                        <button class="btn" onclick="previewProduct(this)" data-url="espresso.html">👁️</button>
+                        <button class="btn" onclick="goToShopPage()">🔗</button>
+                    </div>               
+                </div>
+                <div class="carousel-item">
+                    <span class="sale-badge"> Sale! </span>
+                    <img src="https://down-my.img.susercontent.com/file/id-11134207-7r98w-lw5ah4y2ep23cf.webp" alt="Earl Grey">
+                    <h4>Earl Grey</h4>
+                    <p class="price"><span>$4.99</span> $3.99</p>
+                    <p class="rating">★★★★★</p>
+                    <div class="carousel-item-hover-overlay">
+                        <button class="btn" onclick="addToCart()">🛒</button>
+                        <button class="btn" onclick="previewProduct(this)" data-url="earl-grey.html">👁️</button>
+                        <button class="btn" onclick="goToShopPage()">🔗</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <button class="carousel-btn" id="nextBtn"> ❯ </button>
+        </div>
+        <div class="view-all-container">
+            <a href="shop.html" class="view-all-button">View All</a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery" data-aos="fade-up">
+        <h2>Heart & Hearth <span>Gallery</span></h2>
+        <p>Explore the ambiance and experience our café through our gallery.</p>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="https://c1.wallpaperflare.com/preview/789/392/874/restaurant-cafe-bar-counter.jpg" alt="Gallery Image 1"></div>
+            <div class="gallery-item"><img src="https://c1.wallpaperflare.com/preview/288/412/888/coffee-beans-cafe-coffee-shop.jpg" alt="Gallery Image 2"></div>
+            <div class="gallery-item"><img src="https://c1.wallpaperflare.com/preview/151/990/388/brownie-sizzler-hot-chocolate.jpg" alt="Gallery Image 3"></div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements">
+        <h2 class="achievements-title">Our Achievements</h2>
+        <div class="achievements-container">
+            <div class="achievement-item">
+                <h3 class="achievement-number">287</h3>
+                <p class="achievement-title">Varieties Of Coffee</p>
+                <p class="achievement-description">Explore our diverse range of carefully selected coffee beans sourced from around the globe to suit every taste profile.</p>
+            </div>
+            <div class="achievement-item">
+                <h3 class="achievement-number">125</h3>
+                <p class="achievement-title">Hours Of Testing</p>
+                <p class="achievement-description">Each coffee blend undergoes rigorous testing to ensure premium quality and exceptional taste in every cup.</p>
+            </div>
+            <div class="achievement-item">
+                <h3 class="achievement-number">438</h3>
+                <p class="achievement-title">Coffee Markets</p>
+                <p class="achievement-description">We are proudly present in over 400 markets, connecting coffee lovers worldwide with our quality beans.</p>
+            </div>
+            <div class="achievement-item">
+                <h3 class="achievement-number">340</h3>
+                <p class="achievement-title">Coffee Brands</p>
+                <p class="achievement-description">Our brand portfolio spans 340 unique coffee brands, each with its own distinctive flavor and character.</p>
+            </div>
+        </div>
+        <div class="learn-more-container">
+            <button class="learn-more-btn" onclick="location.href='view-more.html'">Learn More</button>
+        </div>
+    </section>
+
+    <!--Loyalty program section-->
+    <section id="loyalty-program" class="loyalty-section">
+        <div class="container">
+            <div class="loyalty-card">
+                <div class="loyalty-content">
+                    <h2>Join Our Loyalty Program</h2>
+                    <p>Earn rewards, get free drinks, and enjoy exclusive perks with every visit!</p>
+                    <ul class="perks-list">
+                        <li>
+                            <span class="emoji">☕️</span>
+                            <span>Earn 1 point for every dollar spent</span>
+                        </li>
+                        <li>
+                            <span class="emoji">⭐️</span>
+                            <span>Redeem points for free drinks and snacks</span>
+                        </li>
+                        <li>
+                            <span class="emoji">🎁</span>
+                            <span>Exclusive birthday rewards</span>
+                        </li>
+                        <li>
+                            <span class="emoji">👥</span>
+                            <span>Bring a friend and earn double points</span>
+                        </li>
+                    </ul>
+                    <a href="loyalty.html" class="cta-button">
+                        Learn More
+                        <span class="chevron-right">➔</span>
+                    </a>
+                </div>
+                <div class="loyalty-image">
+                    <img src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Happy customers enjoying coffee">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Brands Section -->
+    <section class="featured-brands">
+        <h2>Crafted with the <span class="highlight">World's Finest</span> Ingredients and Equipment</h2>
+        <div class="brand-scroll">
+            <div class="brand-container">
+                <img src="./res/img/espresso-machines-coffee-la-marzocco-linea-mini-coffee-77e64ea91b17ba3d23b07e218fa1345c.png" alt="la marzocco">
+                <img src="https://iconape.com/wp-content/files/pv/241785/png/241785.png" alt="intelligentsia coffee">
+                <img src="./res/img/kisspng-cold-brew-coffee-logo-brand-product-stumptown-found-beer-spiration-for-their-cold-brew-5b8991e2f0f9f5.8656010815357424349871.png" alt="stumptown coffee roaster">
+                <img src="https://i0.wp.com/1of1world.com/wp-content/uploads/2019/08/TWG-Logo-black-e1566226718758.png?w=1080&ssl=1" alt="TWG tea">
+                <img src="https://d44nbjjo4iet8.cloudfront.net/2eqpb9ovos552amyn6idjj78y9l8" alt="Rishi Tea & Botanicals">
+                <img src="./res/img/evian.png" alt="evian">
+                <img src="./res/img/pngwing.com.png" alt="Oatly">
+                <img src="./res/img/aqua.png" alt="Aqua Panna">
+            </div>
+
+            <div class="brand-container">
+                <img src="./res/img/espresso-machines-coffee-la-marzocco-linea-mini-coffee-77e64ea91b17ba3d23b07e218fa1345c.png" alt="la marzocco">
+                <img src="https://iconape.com/wp-content/files/pv/241785/png/241785.png" alt="intelligentsia coffee">
+                <img src="./res/img/kisspng-cold-brew-coffee-logo-brand-product-stumptown-found-beer-spiration-for-their-cold-brew-5b8991e2f0f9f5.8656010815357424349871.png" alt="stumptown coffee roaster">
+                <img src="https://i0.wp.com/1of1world.com/wp-content/uploads/2019/08/TWG-Logo-black-e1566226718758.png?w=1080&ssl=1" alt="TWG tea">
+                <img src="https://d44nbjjo4iet8.cloudfront.net/2eqpb9ovos552amyn6idjj78y9l8" alt="Rishi Tea & Botanicals">
+                <img src="./res/img/evian.png" alt="evian">
+                <img src="./res/img/pngwing.com.png" alt="Oatly">
+                <img src="./res/img/aqua.png" alt="Aqua Panna">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" data-aos="fade-up">
+        <h2>What our <span>Customers Say</span></h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"Best coffee experience ever! The ambiance is perfect for both work and relaxation. Their attention to detail in every cup is remarkable."</p>
+                <p>- Sarah M.</p>
+            </div>
+            <div class="testimonial">
+                <p>"The latte art is always beautiful, and the coffee tastes even better. Their baristas are true artists who understand the craft."</p>
+                <p>- Jason P.</p>
+            </div>
+            <div class="testimonial">
+                <p>"My go-to spot for a relaxing time with friends. The atmosphere is warm and inviting, and the service is exceptional."</p>
+                <p>- Emma J.</p>
+            </div>
+        </div>
+        <div class="testimonial-indicators">
+            <span class="dot" onclick="showTestimonial(0)"></span>
+            <span class="dot" onclick="showTestimonial(1)"></span>
+            <span class="dot" onclick="showTestimonial(2)"></span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="cafe-footer">
+        <div class="footer-container">
+            <!-- Left Section -->
+            <div class="footer-left">
+                <img src="./res/img/cafe.png" alt="Heart & Hearth" class="footer-logo">
+                <p class="footer-tagline">Crafting moments of warmth and connection, one cup at a time.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">🌐</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="Instagram">📸</a>
+                </div>
+            </div>
+    
+            <!-- Right Section -->
+            <div class="footer-right">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>📍 123 Hanway Extension, Milton Villa City, UK</li>
+                        <li>✉️ info@heartandhearth.com</li>
+                        <li>📞 +44 (123) 456 7890</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Opening Hours</h3>
+                    <ul>
+                        <li>🕒 Daily: 9 am - 9 pm</li>
+                        <li>🍴 Breakfast, Lunch, Dinner</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Stay updated with our latest offers and events.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" id="email-input" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Heart & Hearth. All rights reserved.</p>
+        </div>
+    </footer>    
+    
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="./src/cafe.js"></script>
+    <script src="./src/script.js"></script>    
+</html>

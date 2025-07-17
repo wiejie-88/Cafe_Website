@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* About Us */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-image: linear-gradient(black, transparent), url('../res/img/background_img1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin-top: 0px; 
+}
+
+.hero-text {
+    position: relative;
+    text-align: center;
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-family: georgia , serif;
+}
+
+.story-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    width: 100%;
+    margin-block: 8rem;
+}
+
+.story-text {
+    margin-block: 2rem;
+    margin-right: 5rem;
+    padding: 3rem;
+    width: 40%;
+}
+
+.story-text h2 {
+    font-size: 2.5rem;
+    font-family: "Coneria Script", Caviar Dreams;
+    color: #444;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+.story-text p {
+    text-align: justify;
+    font-family: "Chapaza", Caviar Dreams;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: bolder;
+    line-height: 1.6;
+    color: #666;
+}
+
+.story-picture{
+    margin-right: 6rem;
+    max-width: 450px ;
+    width: 30%; 
+    height: auto;
+}
+
+.story-picture img{
+    width: 130%; 
+    height: auto;
+    min-width: 200px;
+    border-radius: 12px;
+    transition: 250ms;
+}
+
+.story-picture img:hover{
+    transform: scale(1.05);
+}
+
+.background-pic {
+    position: relative;
+    margin-bottom: 5rem;
+    padding: 60px 20px;
+    height: 20rem;
+    background: url('../res/img/background_img2.jpg'); 
+    color: #fff;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.our-team-container{
+    margin-block: 10rem;
+    padding: 20px;
+    justify-items: center;
+}
+
+.our-team-text {
+    width: 45%;
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+
+.our-team-text h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    line-height: 1.3em;
+}
+
+.our-team-text p{
+    margin: 1rem 0;
+    font-family: "Chapaza", Caviar Dreams;
+    font-style: oblique;
+    font-weight: bolder;
+    text-align: justify;
+    color: #666;
+}
+
+.member-card-container{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 2rem; 
+    
+}
+
+.member-card {
+    position: relative;
+    overflow: hidden;
+    width: 200px; 
+    margin: 0 auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Image container styling */
+.member-img {
+    position: relative;
+    height: 250px; 
+    overflow: hidden;
+}
+
+.member-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease; 
+}
+
+/* Scale effect on image only */
+.member-card:hover .member-img img {
+    transform: scale(1.1); 
+}
+
+/* Overlay for hover effect */
+.member-img .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.member-card:hover .overlay {
+    opacity: 1;
+}
+
+/* Member info */
+.member-info {
+    text-align: center;
+    height: 100%;
+    padding: 1rem;
+    background-color: #fff;
+    row-gap: 1rem;
+    padding: .6rem;
+}
+
+.member-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #222;
+    padding-bottom: .5rem;
+}
+
+.member-title {
+    font-size: 1rem;
+    color: #777;
+    padding-bottom: .6rem;
+}
+.member-description{
+    text-align: justify;
+    font-size: .9rem;
+}
+
+.member-card:hover .member-name {
+    color: #f3c40c; 
+}
+
+.member-card:hover .member-title {
+    color: #555;
+}
+
+.community-engagement-container{
+    margin-top: 8rem;
+    margin-bottom: 13rem;
+    justify-items: center;
+}
+
+.community-engagement-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 55%;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+
+.community-engagement-text h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 4.3rem;
+    line-height: 1.3em;
+    margin-bottom: 3rem;
+}
+
+.community-engagement-text p{
+    display: flex;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    font-family: "Chapaza", Caviar Dreams;
+    font-style: oblique;
+    font-weight: bolder;
+    text-align: justify;
+    color: #666;
+}
+
+.community-engagement-pic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.community-engagement-pic img{
+    width: 40%;
+    height: auto;
+    min-width: 250px;
+}
+
+@media (max-width: 1000px) {
+
+    .hero-text {
+        font-size: 3rem;
+    }
+
+    .story-container {
+      flex-direction: column;
+      margin-block: 4rem;
+    }
+
+    .story-text {
+        margin: 1rem 3rem;
+        width: 70%;
+    }
+
+    .story-picture{
+        margin-right: 0;
+        width: fit-content;
+    }
+
+    .story-picture img {
+        max-width: 450px;
+    }
+
+    .background-pic {
+        height: 15rem;
+    }
+
+    .our-team-text{
+        width: 90%;
+        text-align: center;
+        margin-bottom: 5rem;
+        justify-content: center;
+    }
+
+    .our-team-text h2{
+        margin-bottom: 3rem;
+    }
+
+    .our-team-text p{
+        width: 70%;
+        font-size: 1.1rem;
+        margin-bottom: 5rem;
+    }
+
+    .member-card-container{
+        grid-template-columns: repeat(2, auto);
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .hero-section {
+        height: 40vh;
+    }
+
+    .hero-text {
+        font-size: 2rem;
+    }
+
+    .story-picture{
+        margin-right: 0;
+        width: fit-content;
+    }
+
+    .story-picture img {
+        max-width: 250px;
+    }
+
+    .member-card-container{
+        grid-template-columns: repeat(2, auto);
+        gap: 1rem;
+    }
+
+    .our-team-container, .community-engagement-container{
+        margin-block: 4rem;
+    }
+
+    .community-engagement-text h2{
+        line-height: 1.1em;
+        margin-bottom: 2rem;
+    }
+    
+    .community-engagement-text h2, .our-team-text h2{
+        font-size: 2.5rem;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .community-engagement-pic{
+        row-gap: 2rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+    
+    .story-text p, .our-team-text p, .community-engagement-text p {
+        font-size: .8rem;
+    }
+
+    .story-text {
+        margin: 1rem 0;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .story-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .background-pic {
+        height: 10rem;
+    }
+
+    .our-team-text{
+        margin-bottom: 2.4rem;
+    }
+
+    .our-team-text p, .community-engagement-text p {
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .member-card-container{
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .member-card {
+        width: 170px; 
+    }
+
+    .member-name {
+        font-size: .7rem;
+        font-weight: bold;
+        color: #222;
+        padding-bottom: .3rem;
+    }
+    
+    .member-title {
+        font-size: .7rem;
+        color: #777;
+        padding-bottom: .3rem;
+    }
+    .member-description{
+        text-align: justify;
+        font-size: .6rem;
+    }
+
+    .member-img {
+        height: 180px; 
+    }
+
+    .community-engagement-text{
+        width: 80%;
+        margin-block: 2rem;
+    }
+
+    .community-engagement-text h2, .our-team-text h2{
+        font-size: 1.9rem;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .community-engagement-pic img{
+        min-width: 200px;
+    }
+}

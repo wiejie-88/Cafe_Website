@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasmine Pearls - Heart & Hearth</title>
+    <link rel="stylesheet" href="./css/product-detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    <div class="bg-tea-leaves"></div>
+
+    <!-- Product detail section -->
+    <main class="product-detail">
+        <div class="container">
+            <nav class="back-nav">
+                <a href="shop.html" class="back-button">&larr; BACK</a>
+            </nav>
+
+            <!-- Product images -->
+            <div class="product-layout">
+                <div class="product-gallery">
+                    <div class="gallery-thumbnails">
+                        <button class="thumb active">
+                            <img src="https://www.goodandpropertea.com/cdn/shop/products/JasminePearls_Front_WR_1296x.jpg?v=1637255278" alt="Jasmine Pearls View 1">
+                        </button>
+                        <button class="thumb">
+                            <img src="https://www.saratogateaandhoney.com/cdn/shop/products/Jasmine-Pearls-brewed.jpeg?v=1617385306&width=3000" alt="Jasmine Pearls View 2">
+                        </button>
+                        <button class="thumb">
+                            <img src="https://oregonkombucha.com/cdn/shop/products/JasmineGreenloose_2000x2000.jpg?v=1643607437" alt="Jasmine Pearls View 3">
+                        </button>
+                    </div>
+                    <div class="gallery-main">
+                        <img src="https://www.goodandpropertea.com/cdn/shop/products/JasminePearls_Front_WR_1296x.jpg?v=1637255278" alt="Jasmine Pearls">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1>Jasmine Pearls</h1>
+                    <div class="price">$26.00</div>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="reviews-count">(38 reviews)</span>
+                    </div>
+                    <div class="description">
+                        <p>Experience the exquisite aroma and delicate flavor of our Jasmine Pearls. These hand-rolled green tea leaves are naturally scented with fresh jasmine blossoms, creating a luxurious and aromatic tea that's both soothing and invigorating.</p>
+                    </div>
+                    <form class="add-to-cart-form">
+                        <div class="quantity">
+                            <button type="button" class="qty-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="99">
+                            <button type="button" class="qty-btn plus">+</button>
+                        </div>
+                        <button type="submit" class="add-to-cart-btn">ADD TO CART</button>
+                    </form>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <span class="label">SKU:</span>
+                            <span class="value">JP004</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">Category:</span>
+                            <a href="#" class="value">Tea</a>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">Tags:</span>
+                            <a href="#" class="value">Green Tea</a>, <a href="#" class="value">Jasmine</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="description">DESCRIPTION</button>
+                    <button class="tab-btn" data-tab="additional">ADDITIONAL INFORMATION</button>
+                    <button class="tab-btn" data-tab="reviews">REVIEWS (38)</button>
+                </div>
+
+                <!-- Product description -->
+                <div class="tabs-content">
+                    <div class="tab-panel active" id="description">
+                        <p>Our Jasmine Pearls are a true testament to the art of tea crafting. Young, tender green tea leaves are carefully hand-rolled into small pearls and then naturally scented with fresh jasmine blossoms over several nights. This process infuses the tea with the delicate, floral essence of jasmine without overpowering the smooth character of the green tea.</p>
+                        <p>When steeped, these pearls gracefully unfurl, releasing a captivating aroma and a sweet, rounded flavor that balances the green tea's light astringency with the soft, fragrant notes of jasmine. The result is a luxurious cup that can be enjoyed throughout the day and is particularly refreshing when served over ice.</p>
+                    </div>
+                    <div class="tab-panel" id="additional">
+                        <table class="additional-info">
+                            <tr>
+                                <th>Origin</th>
+                                <td>Fujian Province, China</td>
+                            </tr>
+                            <tr>
+                                <th>Tea Type</th>
+                                <td>Green Tea</td>
+                            </tr>
+                            <tr>
+                                <th>Flavor Profile</th>
+                                <td>Floral, Sweet, Smooth</td>
+                            </tr>
+                            <tr>
+                                <th>Size</th>
+                                <td>50g (1.76 oz)</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Reviews-->
+                    <div class="tab-panel" id="reviews">
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="stars">★★★★★</span>
+                                <span class="author">by Floral Tea Enthusiast</span>
+                            </div>
+                            <p>These Jasmine Pearls are simply divine! The aroma is intoxicating, and the flavor is perfectly balanced. It's become my go-to tea for relaxation and meditation.</p>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="stars">★★★★☆</span>
+                                <span class="author">by Green Tea Lover</span>
+                            </div>
+                            <p>Beautiful tea with a lovely jasmine scent. The pearls unfurl gracefully, and the taste is smooth and refreshing. My only wish is that the flavor was a bit stronger.</p>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="stars">★★★★★</span>
+                                <span class="author">by Iced Tea Aficionado</span>
+                            </div>
+                            <p>These Jasmine Pearls make an incredible iced tea! The floral notes really shine when chilled, creating a refreshing and sophisticated summer drink.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related products -->
+            <div class="related-products">
+                <h2>RELATED PRODUCTS</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="sencha-gt.html">
+                                <img src="https://bellevue-tea.co.uk/cdn/shop/products/senchagreenpacket_bagVitty_1953x.jpg?v=1648640927" alt="Sencha Green Tea">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="sencha-gt.html">Sencha Green Tea</a></h3>
+                            <div class="rating">★★★★☆</div>
+                            <span class="price">$24.00</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="matcha.html">
+                                <img src="https://www.the-matcha.tokyo/cdn/shop/products/200414_001.jpg?v=1587911961" alt="Matcha Green Tea">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="matcha.html">Matcha Green Tea</a></h3>
+                            <div class="rating">★★★★★</div>
+                            <span class="price">$20.00</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="earl-grey.html">
+                                <img src="https://down-my.img.susercontent.com/file/id-11134207-7r98w-lw5ah4y2ep23cf.webp" alt="Earl Grey">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="earl-grey.html">Earl Grey</a></h3>
+                            <div class="rating">★★★★★</div>
+                            <span class="price">$18.00</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="chamomile.html">
+                                <img src="https://www.theteamakers.co.uk/cdn/shop/products/PR8E9A_2.jpg?v=1694174852&width=700" alt="Chamomile Blossoms">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="chamomile.html">Chamomile Blossoms</a></h3>
+                            <div class="rating">★★★★☆</div>
+                            <span class="price">$22.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./src/product-detail.js"></script>
+</body>
+</html>

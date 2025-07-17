@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make A Reservation</title>
+    <link rel="stylesheet" href="./css/reserve.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+      <!-- Header and navigation -->
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./res/img/cafe.png" alt="Cafe Logo">
+                </div>
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="cafe.html" >Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="contact.html" class="active">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="login-signup">
+              <a href="loyalty.html" class="login-signup-button">Login / Sign Up</a>
+          </div>
+        </header>
+
+        <!-- Reservation form section -->
+        <section id="reservation-form">
+            <h2>Make A Reservation</h2>
+            <div id="reservation-policy">
+                <h3>Reservation Policy</h3>
+                <p>Our opening hours are daily from 9:00 AM to 9:00 PM.</p>
+                <p>Please select a suitable date and time slot from the options below. For group bookings or private hires, 
+                   you can <a href="partybooking.html" class="party-booking-link">click here</a> or contact us directly at 
+                   <a href="mailto:cowabunga@goodnews.pizza">heart&hearth@email.com</a> for assistance.</p>
+                <p>Note: A reservation can only be held for 15 minutes beyond the selected time. After that, it will be 
+                   released if the party has not arrived.</p>
+            
+    
+            <form id="reservationForm">
+                
+                <label for="reservation-name">Name:</label>
+                <input type="text" id="reservation-name" name="reservation-name" placeholder= "John Doe" required>
+                
+    
+                <label for="reservation-email">Email:</label>
+                <input type="email" id="reservation-email" name="reservation-email" placeholder="example@mail.com"  required>
+                
+    
+                <label for="reservation-contact">Contact Number:</label>
+                <input type="tel" id="reservation-contact" name="reservation-contact" placeholder="012-3456789" required>
+                
+    
+                
+                <label for="reservation-date">Date:</label>
+                <input type="date" id="reservation-date" name="reservation-date" required>
+                
+                
+                <label for="reservation-time">Time:</label>
+                <div id="time-slots">
+                    <input type="radio" id="time-0900" name="reservation-time" value="09:00" required>
+                    <label for="time-0900">9:00 AM</label>
+    
+                    <input type="radio" id="time-1000" name="reservation-time" value="10:00">
+                    <label for="time-1000">10:00 AM</label>
+    
+                    <input type="radio" id="time-1100" name="reservation-time" value="11:00">
+                    <label for="time-1100">11:00 AM</label>
+    
+                    <input type="radio" id="time-1200" name="reservation-time" value="12:00">
+                    <label for="time-1200">12:00 PM</label>
+    
+                    <input type="radio" id="time-1300" name="reservation-time" value="13:00">
+                    <label for="time-1300">1:00 PM</label>
+    
+                    <input type="radio" id="time-1400" name="reservation-time" value="14:00">
+                    <label for="time-1400">2:00 PM</label>
+    
+                    <input type="radio" id="time-1500" name="reservation-time" value="15:00">
+                    <label for="time-1500">3:00 PM</label>
+    
+                    <input type="radio" id="time-1600" name="reservation-time" value="16:00">
+                    <label for="time-1600">4:00 PM</label>
+    
+                    <input type="radio" id="time-1700" name="reservation-time" value="17:00">
+                    <label for="time-1700">5:00 PM</label>
+    
+                    <input type="radio" id="time-1800" name="reservation-time" value="18:00">
+                    <label for="time-1800">6:00 PM</label>
+    
+                    <input type="radio" id="time-1900" name="reservation-time" value="19:00">
+                    <label for="time-1900">7:00 PM</label>
+    
+                    <input type="radio" id="time-2000" name="reservation-time" value="20:00">
+                    <label for="time-2000">8:00 PM</label>
+                </div>
+                <div id="time-error" class="error"></div>
+    
+                
+                <label for="reservation-pax">Number of People:</label>
+                <select id="reservation-pax" name="reservation-pax" required>
+                    <option value="">Select</option>
+                    <option value="1">1 person</option>
+                    <option value="2">2 people</option>
+                    <option value="3">3 people</option>
+                    <option value="4">4 people</option>
+                    <option value="5">5 people</option>
+                </select>
+                
+                
+                <button type="submit">Confirm Reservation</button>
+            </form>
+    
+            
+            <a href="cafe.html" class="back-btn">Back to Home</a>
+        </section>
+
+
+      <!-- Confirmation modal for reservation -->
+      <div id="confirmationModal" class="modal">
+          <div class="modal-content">
+              <span class="close-btn" onclick="closeModal()">&times;</span>
+              <h3>Reservation Confirmed!</h3>
+              <p>Your reservation has been successfully submitted. We look forward to your visit!</p>
+          </div>
+      </div>
+          
+
+      <!-- Footer -->
+      <footer class="cafe-footer">
+          <div class="footer-container">
+            <div class="footer-section">
+              <img src="./res/img/cafe.png" alt="Heart & Hearth" class="footer-logo">
+              <p class="footer-tagline">Crafting moments of warmth and connection, one cup at a time.</p>
+              <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+              </div>
+            </div>
+            
+            <div class="footer-section">
+              <h3>Contact Us</h3>
+              <ul>
+                <li><i class="icon-map-pin"></i> 123 Hanway Extension, Milton Villa City, UK</li>
+                <li><i class="icon-mail"></i> info@heartandhearth.com</li>
+                <li><i class="icon-phone"></i> +44 (123) 456 7890</li>
+              </ul>
+            </div>
+            
+            <div class="footer-section">
+              <h3>Opening Hours</h3>
+              <ul>
+                <li><i class="icon-clock"></i> Daily : 9 am - 9 pm</li>
+                <li><i class="icon-coffee"></i> Breakfast, Lunch, Dinner</li>
+              </ul>
+            </div>
+            
+            <div class="footer-section">
+              <h3>Newsletter</h3>
+              <p>Stay updated with our latest offers and events.</p>
+              <form id="newsletter-form" class="newsletter-form">
+                <input type="email" id="email-input" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          
+          <div class="footer-bottom">
+            <p>&copy; 2024 Heart & Hearth. All rights reserved.</p>
+          </div>
+      </footer>
+  </div>
+  <script src="./src/reserve.js"></script>   
+  <script src="./src/script.js"></script>
+</body>
+</html>

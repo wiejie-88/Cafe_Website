@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Blend - Heart & Hearth</title>
+    <link rel="stylesheet" href="./css/product-detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    <div class="bg-coffee-beans"></div>
+
+    <!-- Product Detail Section -->
+    <main class="product-detail">
+        <div class="container">
+            <nav class="back-nav">
+                <a href="shop.html" class="back-button">&larr; BACK</a>
+            </nav>
+            <div class="product-layout">
+                <!-- Product Gallery -->
+                <div class="product-gallery">
+                    <div class="gallery-thumbnails">
+                        <button class="thumb active">
+                            <img src="https://static.wixstatic.com/media/a0bd2c_57e9ff0ab4de458fb651596760282e5f~mv2.png/v1/fill/w_520,h_420,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a0bd2c_57e9ff0ab4de458fb651596760282e5f~mv2.png" alt="House Blend View 1">
+                        </button>
+                        <button class="thumb">
+                            <img src="https://donutbank.com/cdn/shop/files/houseblendcoffee.jpg?v=1699541895" alt="House Blend View 2">
+                        </button>
+                        <button class="thumb">
+                            <img src="https://cdn.shopify.com/s/files/1/0918/3414/files/what-is-house-blend-coffee.jpg?v=1491495797" alt="House Blend View 3">
+                        </button>
+                    </div>
+                    <div class="gallery-main">
+                        <img src="https://static.wixstatic.com/media/a0bd2c_57e9ff0ab4de458fb651596760282e5f~mv2.png/v1/fill/w_520,h_420,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a0bd2c_57e9ff0ab4de458fb651596760282e5f~mv2.png" alt="House Blend">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1>House Blend</h1>
+                    <div class="price">$18.99</div>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="reviews-count">(15 reviews)</span>
+                    </div>
+                    <div class="description">
+                        <p>Our signature House Blend coffee is a perfectly balanced medium roast with notes of chocolate, nuts, and a hint of caramel. Sourced from premium Arabica beans, this blend offers a smooth, rich flavor that's perfect for your morning cup or an afternoon pick-me-up.</p>
+                    </div>
+                    <form class="add-to-cart-form">
+                        <div class="quantity">
+                            <button type="button" class="qty-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="99">
+                            <button type="button" class="qty-btn plus">+</button>
+                        </div>
+                        <button type="submit" class="add-to-cart-btn">ADD TO CART</button>
+                    </form>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <span class="label">SKU:</span>
+                            <span class="value">HB001</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">Category:</span>
+                            <a href="#" class="value">Coffee</a>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">Tags:</span>
+                            <a href="#" class="value">Medium Roast</a>, <a href="#" class="value">Arabica</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="description">DESCRIPTION</button>
+                    <button class="tab-btn" data-tab="additional">ADDITIONAL INFORMATION</button>
+                    <button class="tab-btn" data-tab="reviews">REVIEWS (15)</button>
+                </div>
+                <div class="tabs-content">
+                    <div class="tab-panel active" id="description">
+                        <p>Our House Blend is crafted with care, using a selection of premium Arabica beans from various regions. The result is a well-balanced, medium roast coffee that offers a delightful complexity of flavors. With its smooth body and subtle acidity, this blend is versatile enough to be enjoyed black or with your favorite milk or creamer.</p>
+                        <p>Tasting notes include rich chocolate, toasted nuts, and a subtle caramel sweetness that lingers on the palate. Whether you're brewing with a drip machine, French press, or pour-over, our House Blend delivers a consistently satisfying cup that's perfect for any time of day.</p>
+                    </div>
+                    <div class="tab-panel" id="additional">
+                        <table class="additional-info">
+                            <tr>
+                                <th>Roast Level</th>
+                                <td>Medium</td>
+                            </tr>
+                            <tr>
+                                <th>Origin</th>
+                                <td>Blend (South America, Central America)</td>
+                            </tr>
+                            <tr>
+                                <th>Flavor Profile</th>
+                                <td>Chocolate, Nuts, Caramel</td>
+                            </tr>
+                            <tr>
+                                <th>Size</th>
+                                <td>12 oz (340g)</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-panel" id="reviews">
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="stars">★★★★★</span>
+                                <span class="author">by Coffee Lover</span>
+                            </div>
+                            <p>This House Blend is my new go-to morning coffee. The balance of flavors is perfect, and it's so smooth I can drink it black. Highly recommend!</p>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="stars">★★★★☆</span>
+                                <span class="author">by Morning Person</span>
+                            </div>
+                            <p>Great everyday coffee. The chocolate and nut notes really come through. It's not too acidic, which I appreciate. Would buy again.</p>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="stars">★★★★★</span>
+                                <span class="author">by Caffeine Connoisseur</span>
+                            </div>
+                            <p>I'm impressed with the complexity of this blend. It's rich without being overpowering, and the subtle caramel sweetness is delightful. Perfect for my French press!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <div class="related-products">
+                <h2>RELATED PRODUCTS</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="robusta.html">
+                                <img src="https://deansbeans.com/cdn/shop/products/1668be6d5f748f4eb91cd3d1bd2e3264_2048x2048.jpg?v=17002320060" alt="Robusta">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="robusta.html">Robusta</a></h3>
+                            <div class="rating">★★★★★</div>
+                            <span class="price">$21.99</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="breakfast-blend.html">
+                                <img src="https://groundsandhoundscoffee.com/cdn/shop/files/Homeward-Blend_c4434128-12fb-4740-a695-2943a3462526_5000x.jpg?v=1691593418" alt="Breakfast Blend">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="breakfast-blend.html">Breakfast Blend</a></h3>
+                            <div class="rating">★★★★☆</div>
+                            <span class="price">$22.99</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="espresso.html">
+                                <img src="https://patagoniachocolates.co.nz/assets/Uploads/_resampled/CroppedImage637546-Coffee-Espresso-1.jpg" alt="Espresso">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="espresso.html">Espresso</a></h3>
+                            <div class="rating">★★★★☆</div>
+                            <span class="price">$19.99</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="dark-roast.html">
+                                <img src="https://i.pinimg.com/564x/54/10/99/5410999db531607582316fe1866d99cd.jpg" alt="Dark Roast">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="dark-roast.html">Dark Roast</a></h3>
+                            <div class="rating">★★★★☆</div>
+                            <span class="price">$19.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./src/product-detail.js"></script>
+</body>
+</html>

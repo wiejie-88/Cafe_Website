@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha Green Tea - Heart & Hearth</title>
+    <link rel="stylesheet" href="./css/product-detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    <div class="bg-tea-leaves"></div>
+
+    <!-- Product detail section -->
+    <main class="product-detail">
+        <div class="container">
+            <nav class="back-nav">
+                <a href="shop.html" class="back-button">&larr; BACK</a>
+            </nav>
+
+            <!-- Product images -->
+            <div class="product-layout">
+                <div class="product-gallery">
+                    <div class="gallery-thumbnails">
+                        <button class="thumb active">
+                            <img src="https://www.the-matcha.tokyo/cdn/shop/products/200414_001.jpg?v=1587911961" alt="Matcha Green Tea View 1">
+                        </button>
+                        <button class="thumb">
+                            <img src="https://www.artoftea.com.au/wp-content/uploads/2022/07/organic_matcha.jpg" alt="Matcha Green Tea View 2">
+                        </button>
+                        <button class="thumb">
+                            <img src="https://cdn.britannica.com/13/236613-050-31D81074/matcha-tea-ceremony.jpg" alt="Matcha Green Tea View 3">
+                        </button>
+                    </div>
+                    <div class="gallery-main">
+                        <img src="https://www.the-matcha.tokyo/cdn/shop/products/200414_001.jpg?v=1587911961" alt="Matcha Green Tea">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <div class="product-header">
+                        <span class="new-badge">NEW</span>
+                        <h1>Matcha Green Tea</h1>
+                    </div>
+                    <div class="price">$20.00</div>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="reviews-count">(15 reviews)</span>
+                    </div>
+                    <div class="description">
+                        <p>100% Organic Japanese Matcha Green Tea powder, carefully stone-ground to perfection. Rich in antioxidants and offering a smooth, umami flavor with subtle sweetness. Perfect for traditional preparation or modern matcha beverages.</p>
+                    </div>
+                    <form class="add-to-cart-form">
+                        <div class="quantity">
+                            <button type="button" class="qty-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="99">
+                            <button type="button" class="qty-btn plus">+</button>
+                        </div>
+                        <button type="submit" class="add-to-cart-btn">ADD TO CART</button>
+                    </form>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <span class="label">SKU:</span>
+                            <span class="value">MGT001</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">Category:</span>
+                            <a href="#" class="value">Tea</a>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">Tags:</span>
+                            <a href="#" class="value">Green Tea</a>, <a href="#" class="value">Organic</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="description">DESCRIPTION</button>
+                    <button class="tab-btn" data-tab="additional">ADDITIONAL INFORMATION</button>
+                    <button class="tab-btn" data-tab="reviews">REVIEWS (15)</button>
+                </div>
+
+                <!-- Product description -->
+                <div class="tabs-content">
+                    <div class="tab-panel active" id="description">
+                        <p>Our premium Matcha Green Tea is sourced from the finest tea gardens in Japan. The leaves are carefully shade-grown, harvested, and stone-ground to create a fine, vibrant green powder that's rich in antioxidants and natural caffeine.</p>
+                        <p>This ceremonial grade matcha offers a smooth, balanced flavor profile with the perfect combination of sweetness and umami. Whether you're preparing traditional matcha or creating modern beverages, this versatile tea powder delivers exceptional quality and authentic taste.</p>
+                    </div>
+                    <div class="tab-panel" id="additional">
+                        <table class="additional-info">
+                            <tr>
+                                <th>Origin</th>
+                                <td>Japan</td>
+                            </tr>
+                            <tr>
+                                <th>Grade</th>
+                                <td>Ceremonial</td>
+                            </tr>
+                            <tr>
+                                <th>Flavor Profile</th>
+                                <td>Smooth, Sweet, Umami</td>
+                            </tr>
+                            <tr>
+                                <th>Size</th>
+                                <td>30g (1.06 oz)</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Reviews-->
+                    <div class="tab-panel" id="reviews">
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="stars">★★★★★</span>
+                                <span class="author">by Tea Enthusiast</span>
+                            </div>
+                            <p>Exceptional quality matcha! The color is vibrant, and the taste is smooth with no bitterness. Perfect for both traditional preparation and lattes.</p>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="stars">★★★★★</span>
+                                <span class="author">by Matcha Lover</span>
+                            </div>
+                            <p>This is truly ceremonial grade matcha. The powder is so fine and the color is beautiful. The taste is exactly what you'd expect from high-quality matcha.</p>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="stars">★★★★★</span>
+                                <span class="author">by Wellness Seeker</span>
+                            </div>
+                            <p>Love starting my day with this matcha! It provides clean energy without the jitters, and the taste is incredibly smooth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related products -->
+            <div class="related-products">
+                <h2>RELATED PRODUCTS</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="sencha-gt.html">
+                                <img src="https://bellevue-tea.co.uk/cdn/shop/products/senchagreenpacket_bagVitty_1953x.jpg?v=1648640927" alt="Sencha Green Tea">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="sencha-gt.html">Sencha Green Tea</a></h3>
+                            <div class="rating">★★★★☆</div>
+                            <span class="price">$24.00</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="jasmine-pearls.html">
+                                <img src="https://www.goodandpropertea.com/cdn/shop/products/JasminePearls_Front_WR_1296x.jpg?v=1637255278" alt="Jasmine Pearls">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="jasmine-pearls.html">Jasmine Pearls</a></h3>
+                            <div class="rating">★★★★☆</div>
+                            <span class="price">$26.00</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="english-breakfast.html">
+                                <img src="https://www.goodandpropertea.com/cdn/shop/products/a0f19dc0-370d-4d7a-b6be-83e7d6f4ef36_1296x.png?v=1668422965/placeholder.svg?height=400&width=400" alt="English Breakfast">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="english-breakfast.html">English Breakfast</a></h3>
+                            <div class="rating">★★★★★</div>
+                            <span class="price">$29.00</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="earl-grey.html">
+                                <img src="https://down-my.img.susercontent.com/file/id-11134207-7r98w-lw5ah4y2ep23cf.webp" alt="Earl Grey">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="earl-grey.html">Earl Grey</a></h3>
+                            <div class="rating">★★★★★</div>
+                            <span class="price">$18.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./src/product-detail.js"></script>
+</body>
+</html>

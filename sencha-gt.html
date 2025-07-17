@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sencha Green Tea - Heart & Hearth</title>
+    <link rel="stylesheet" href="./css/product-detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    <div class="bg-tea-leaves"></div>
+
+    <!-- Product detail section -->
+    <main class="product-detail">
+        <div class="container">
+            <nav class="back-nav">
+                <a href="shop.html" class="back-button">&larr; BACK</a>
+            </nav>
+
+            <!-- Product images -->
+            <div class="product-layout">
+                <div class="product-gallery">
+                    <div class="gallery-thumbnails">
+                        <button class="thumb active">
+                            <img src="https://bellevue-tea.co.uk/cdn/shop/products/senchagreenpacket_bagVitty_1953x.jpg?v=1648640927" alt="Sencha Green Tea View 1">
+                        </button>
+                        <button class="thumb">
+                            <img src="https://cdn.shopify.com/s/files/1/1423/7286/files/two_tea_cups_8.19.19_-min_1024x1024.jpeg?v=1566246910" alt="Sencha Green Tea View 2">
+                        </button>
+                        <button class="thumb">
+                            <img src="https://cdn.shopify.com/s/files/1/1423/7286/files/dried_sencha_8.19.19_-min_1024x1024.jpeg?v=1566246904" alt="Sencha Green Tea View 3">
+                        </button>
+                    </div>
+                    <div class="gallery-main">
+                        <img src="https://bellevue-tea.co.uk/cdn/shop/products/senchagreenpacket_bagVitty_1953x.jpg?v=1648640927" alt="Sencha Green Tea">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1>Sencha Green Tea</h1>
+                    <div class="price">$24.00</div>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="reviews-count">(41 reviews)</span>
+                    </div>
+                    <div class="description">
+                        <p>Discover the authentic taste of Japan with our premium Sencha Green Tea. This classic Japanese green tea offers a refreshing, grassy flavor with a subtle sweetness and a smooth, clean finish. Perfect for daily drinking and promoting overall well-being.</p>
+                    </div>
+                    <form class="add-to-cart-form">
+                        <div class="quantity">
+                            <button type="button" class="qty-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="99">
+                            <button type="button" class="qty-btn plus">+</button>
+                        </div>
+                        <button type="submit" class="add-to-cart-btn">ADD TO CART</button>
+                    </form>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <span class="label">SKU:</span>
+                            <span class="value">SG005</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">Category:</span>
+                            <a href="#" class="value">Tea</a>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">Tags:</span>
+                            <a href="#" class="value">Green Tea</a>, <a href="#" class="value">Japanese</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="description">DESCRIPTION</button>
+                    <button class="tab-btn" data-tab="additional">ADDITIONAL INFORMATION</button>
+                    <button class="tab-btn" data-tab="reviews">REVIEWS (41)</button>
+                </div>
+
+                <!-- Product description -->
+                <div class="tabs-content">
+                    <div class="tab-panel active" id="description">
+                        <p>Our Sencha Green Tea is carefully sourced from the lush tea fields of Shizuoka, Japan. The leaves are harvested in the first flush of spring, ensuring the highest quality and most vibrant flavor. Sencha is distinguished by its unique processing method, where the leaves are first steamed to prevent oxidation, then rolled and dried into their characteristic needle shape.</p>
+                        <p>When brewed, Sencha produces a bright, yellow-green liquor with a fresh, grassy aroma. The taste is refreshingly vegetal with notes of sweet umami and a slightly astringent finish. Rich in antioxidants and nutrients, Sencha is not only a delicious beverage but also a healthful addition to your daily routine.</p>
+                    </div>
+                    <div class="tab-panel" id="additional">
+                        <table class="additional-info">
+                            <tr>
+                                <th>Origin</th>
+                                <td>Shizuoka Prefecture, Japan</td>
+                            </tr>
+                            <tr>
+                                <th>Tea Type</th>
+                                <td>Green Tea</td>
+                            </tr>
+                            <tr>
+                                <th>Flavor Profile</th>
+                                <td>Grassy, Sweet, Umami</td>
+                            </tr>
+                            <tr>
+                                <th>Size</th>
+                                <td>100g (3.53 oz)</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Reviews-->
+                    <div class="tab-panel" id="reviews">
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="stars">★★★★★</span>
+                                <span class="author">by Japanese Tea Lover</span>
+                            </div>
+                            <p>This Sencha is exceptional! The flavor is clean, crisp, and authentically Japanese. It's become my go-to morning tea for a refreshing start to the day.</p>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="stars">★★★★☆</span>
+                                <span class="author">by Green Tea Enthusiast</span>
+                            </div>
+                            <p>A very good Sencha with a pleasant grassy flavor. The umami notes are subtle but noticeable. I appreciate the quality, though I find it a bit mild for my taste.</p>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="stars">★★★★★</span>
+                                <span class="author">by Health-Conscious Sipper</span>
+                            </div>
+                            <p>I love this Sencha not just for its taste, but also for its health benefits. It's a great alternative to coffee, providing a gentle energy boost without the jitters.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related products -->
+            <div class="related-products">
+                <h2>RELATED PRODUCTS</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="matcha.html">
+                                <img src="https://www.the-matcha.tokyo/cdn/shop/products/200414_001.jpg?v=1587911961" alt="Matcha Green Tea">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="matcha.html">Matcha Green Tea</a></h3>
+                            <div class="rating">★★★★★</div>
+                            <span class="price">$20.00</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="jasmine-pearls.html">
+                                <img src="https://www.goodandpropertea.com/cdn/shop/products/JasminePearls_Front_WR_1296x.jpg?v=1637255278" alt="Jasmine Pearls">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="jasmine-pearls.html">Jasmine Pearls</a></h3>
+                            <div class="rating">★★★★☆</div>
+                            <span class="price">$26.00</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="english-breakfast.html">
+                                <img src="https://www.goodandpropertea.com/cdn/shop/products/a0f19dc0-370d-4d7a-b6be-83e7d6f4ef36_1296x.png?v=1668422965/placeholder.svg?height=400&width=400" alt="English Breakfast">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="english-breakfast.html">English Breakfast</a></h3>
+                            <div class="rating">★★★★★</div>
+                            <span class="price">$29.00</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="earl-grey.html">
+                                <img src="https://down-my.img.susercontent.com/file/id-11134207-7r98w-lw5ah4y2ep23cf.webp" alt="Earl Grey">
+                            </a>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <h3><a href="earl-grey.html">Earl Grey</a></h3>
+                            <div class="rating">★★★★★</div>
+                            <span class="price">$18.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./src/product-detail.js"></script>
+</body>
+</html>c

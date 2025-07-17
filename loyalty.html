@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Rewards: Our Loyalty Program</title>
+    <link rel="stylesheet" href="./css/loyalty.css">
+</head>
+<body>
+    <!-- Main container area -->
+    <div class="container">
+        <nav class="back-nav">
+            <a href="cafe.html" class="back-button">&larr; BACK</a>
+        </nav>
+        <h1>Brew Rewards: Our Loyalty Program</h1>
+        
+        <div class="grid">
+            <div>
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">How It Works</h2>
+                        <p class="card-description">Earn points with every purchase and unlock amazing perks!</p>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li><img src="https://api.iconify.design/lucide:coffee.svg" alt="Coffee" class="icon"> 1 point for every dollar spent</li>
+                            <li><img src="https://api.iconify.design/lucide:star.svg" alt="Star" class="icon"> Redeem points for free drinks and snacks</li>
+                            <li><img src="https://api.iconify.design/lucide:gift.svg" alt="Gift" class="icon"> Exclusive birthday rewards</li>
+                            <li><img src="https://api.iconify.design/lucide:zap.svg" alt="Zap" class="icon"> Early access to seasonal specials</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Membership Tiers</h2>
+                    </div>
+                    <div class="card-content">
+                        <ul id="membership-tiers"></ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1515860734122-e0d771b36d3e?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Loyalty Program Benefits" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Join or Sign In</h3>
+                        <div class="tabs">
+                            <button class="tab active" data-tab="join">Join Now</button>
+                            <button class="tab" data-tab="signin">Sign In</button>
+                        </div>
+                        <div class="tab-content active" id="join">
+                            <form id="join-form">
+                                <div class="form-group">
+                                    <label for="join-name">Full Name</label>
+                                    <input id="join-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="join-email">Email</label>
+                                    <input id="join-email" type="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="join-password">Password</label>
+                                    <input id="join-password" type="password" required>
+                                </div>
+                                <button type="submit">Join Now</button>
+                            </form>
+                        </div>
+                        <div class="tab-content" id="signin">
+                            <form id="signin-form">
+                                <div class="form-group">
+                                    <label for="signin-email">Email</label>
+                                    <input id="signin-email" type="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="signin-password">Password</label>
+                                    <input id="signin-password" type="password" required>
+                                </div>
+                                <button type="submit">Sign In</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FAQ Section -->
+        <div class="faq-bar" id="faq-bar">
+            Frequently Asked Questions
+            <span class="faq-arrow">&#9660;</span>
+        </div>
+        <div class="faq-content" id="faq-content">
+            <div id="faq-list"></div>
+        </div>
+        
+        <!-- Call to action section-->
+        <div class="cta">
+            <h3>Ready to start earning rewards?</h3>
+            <button onclick="setActiveTab('join')">Join Brew Rewards Now</button>
+        </div>
+    </div>
+
+    <script src="./src/loyalty.js"></script>
+</body>
+</html>
